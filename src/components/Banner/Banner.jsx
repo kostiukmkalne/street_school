@@ -2,7 +2,7 @@ import React from "react";
 import "./Banner.scss";
 import { Button } from "../Button/Button";
 import stars from "../../assets/logo.svg";
-import arrdown from "../../assets/arrow-down.svg";
+import arrdown from "../../assets/arrowDown.svg";
 import video from "../../assets/video/presentation.MP4";
 import videoImg from "../../assets/video-img.svg";
 

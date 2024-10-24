@@ -1,9 +1,9 @@
 import React from "react";
 import "./Header.scss";
-import Navigation from "../Navigation/Navigation";
+import { Navigation } from "../Navigation/Navigation";
 import logo from "../../assets/logo.svg";
-import eng from "../../assets/en-lang.svg";
-import ua from "../../assets/ua-lang.svg";
+import eng from "../../assets/engLang.svg";
+import ua from "../../assets/uaLang.svg";
 
 export const Header = () => (
   <header className="header">
