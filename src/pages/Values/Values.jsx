@@ -1,6 +1,6 @@
-import "./values.scss";
+import "./Values.scss";
 import goals from "../../assets/goals.svg";
-import valueData from "../../Json/ValueDate";
+import valueData from "../../JsonEng/ValueDate";
 
 export const Values = () => (
   <section className="values">

@@ -1,26 +1,64 @@
-.banner {
+// Змінні для кольорів, розмірів та шрифтів
+$primary-color: rgb(55, 55, 55);
+$font-family: 'Inter', sans-serif;
+$font-size: 1rem;
+$font-weight: 700;
+$line-height: 1.2;
+
+// Базові стилі для тексту
+* {
+  font-family: $font-family;
+  color: $primary-color;
+  line-height: $line-height;
+  font-weight: $font-weight;
+}
+
+// Стилі для .banner-page
+.banner-page {
   max-width: 100%;
+  display: flex;
+  flex-direction: inherit;
+
+  background-image: url('../../assets/bannerBack.svg');
+}
+
+// Стилі для .banner
+.banner {
   margin: 0 auto;
   padding: 20px;
   display: flex;
   flex-direction: column;
   background-size: cover;
-  color: rgb(55, 55, 55);
-  font-family: 'Inter', sans-serif;
-  font-size: 1rem;
-  font-weight: 700;
-  line-height: 1.2;
+  font-size: $font-size;
   text-align: left;
 
   &__titles {
-    display: flex;
+    display: block;
     flex-direction: column;
   }
 
   &__text {
+    display: block;
+    margin: 135.5px 462px 0 0;
+  }
+
+  &__title-main {
     display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
+    margin: 19.5px 36px 32px 0;
+  }
+
+  &__explanation {
+    display: flex;
+    flex-direction: column;
+
+    font-weight: normal;
+    margin-bottom: 48px;
+  }
+
+  &__text {
+    display: inline-flex;
+    align-items: center; // Вирівнює зірки і текст по центру
+    gap: 8px; // Відступ між елементами
   }
 
   &__stars {
@@ -28,46 +66,32 @@
     height: 16px;
   }
 
-  &__clients {
-    display: flex;
-    align-items: center;
-    margin: 0 8px;
-  }
-
-  &__title-main, &__explanation {
-    display: flex;
-    flex-direction: column;
-    margin: 16px 0;
-  }
-
   &__button {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 8px 16px;
-    margin: 8px 0;
-  }
-
-  &__button-icon {
-    width: 14px;
-    height: 14px;
-    transform: rotate(135deg);
-    border: 1.5px solid rgb(55, 55, 55);
-    box-shadow: 1px 1px 0 rgb(255, 255, 255);
   }
 }
 
+.video {
+  display: flex;
+
+  &__size {
+    height: 638px;
+    width: 494px;
+  }
+}
+
+// Медіа-запити для адаптивності
 @media (max-width: 768px) {
   .banner {
     padding: 20px;
-  }
 
-  .banner__title-main {
-    width: 100%;
-    font-size: 1.5rem;
-  }
+    &__title-main {
+      width: 100%;
+      font-size: 1.5rem;
+    }
 
-  .banner__button {
-    width: 100%;
+    &__button {
+      width: 100%;
+    }
   }
 }

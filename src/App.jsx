@@ -1,14 +1,16 @@
 import React from "react";
 import { Header } from "./components/Header/Header";
-import { Navigation } from './components/Navigation/Navigation';
 import { Banner } from './components/Banner/Banner';
+import { Values } from "./pages/Values/Values";
 
 const App = () => {
-  <div>
-    <Header />
-    <Navigation />
-    <Banner />
-  </div>
+  return (
+    <div>
+      <Header />
+      <Banner />
+      <Values />
+    </div>
+  );
 };
 
 export default App;

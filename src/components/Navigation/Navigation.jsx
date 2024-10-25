@@ -12,7 +12,7 @@ const navItems = [
 
 export const Navigation = () => (
   <nav className="nav">
-    <ul className="nav__list">
+    <ul className="nav__list"> 
       {navItems.map((item, index) => (
         <li className="nav__item" key={index}>
           <a className="nav__link" href={item.href}>
