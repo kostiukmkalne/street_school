@@ -1,8 +1,15 @@
 .values {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  background-size: cover;
+  text-align: left;
+
   position: relative;
+  display: flex;
   width: 100%;
-  max-width: 1684px;
-  height: auto;
 
   &__text {
     display: flex;
@@ -10,13 +17,16 @@
     flex-direction: column;
   }
 
-  &__goals {
-    width: 9.69px;
-    height: 9.7px;
-    margin-right: 9.76px;
+  &__goals-img {
+    width: 16px;
+    height: 16px;
   }
 
-  &__pre-title, &__main-title {
+  // &__pre-title {
+
+  // }
+
+  &__main-title {
     color: rgb(55, 55, 55);
     font-family: Inter, sans-serif;
     line-height: 120%;

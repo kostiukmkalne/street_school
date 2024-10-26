@@ -38,13 +38,13 @@ $line-height: 1.2;
     gap: 2.5px;
   }
 
-  &__explanation {
-    font-weight: normal;
-  }
-
   &__stars-img {
     width: 16px;
     height: 16px;
+  }
+
+  &__explanation {
+    font-weight: normal;
   }
 }
 

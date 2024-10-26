@@ -6,7 +6,11 @@ export const Values = () => (
   <section className="values">
     <header className="values__titles">
       <div className="values__text">
-        <img src={goals} className="values__goals" alt="made-goals" />
+        <img
+          src={goals}
+          className="values__goals-img"
+          alt="made-goals"
+        />
         <h6 className="values__pre-title">Our Values</h6>
       </div>
       <h1 className="values__main-title">Your Goal - Our Motivation</h1>
