@@ -1,6 +1,7 @@
 import React from "react";
 import "./Banner.scss";
 import { Button } from "../Button/Button";
+import arrdown from '../../assets/arrowDown.svg';
 import stars from "../../assets/stars.svg";
 import video from "../../assets/video/presentation.MP4";
 import videoImg from "../../assets/video-img.svg";
@@ -9,18 +10,12 @@ export const Banner = () => (
   <div className="banner-page">
     <div className="banner">
       <div className="banner__titles">
-        <div className="banner__text">
-          <img
-            src={stars}
-            className="banner__stars"
-            alt="Corporate stars logo"
-          />
-          <h6 className="banner__text-clients">
-            English for corporate clients
-          </h6>
+        <div className="banner__block-clients">
+          <img src={stars} className="banner__stars-img" alt="stars-img" />
+          <h6 className="banner__text">English for corporate clients</h6>
         </div>
 
-        <h1 className="banner__title-main">
+        <h1 className="banner__main-title">
           Expand
           <br />
           your business horizons
@@ -35,8 +30,13 @@ export const Banner = () => (
         </h6>
       </div>
 
-      <Button className="banner__button" aria-label="Learn more about courses">
+      <Button className="banner__button" aria-label="banner-button">
         More About Courses
+        <img
+          src={arrdown}
+          className="banner__batton-img"
+          alt="arrow-down"
+        />
       </Button>
     </div>
 

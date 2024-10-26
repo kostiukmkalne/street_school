@@ -1,5 +1,4 @@
 import "./Button.scss";
-import arrdown from '../../assets/arrowDown.svg';
 
 export const Button = ({ onClick, children, cn }) => {
   const handleClick = () => {
@@ -14,11 +13,6 @@ export const Button = ({ onClick, children, cn }) => {
       className={`button ${cn}`}
     >
       {children}
-      <img
-        src={arrdown}
-        className="batton__img"
-        alt="arrow-down"
-      />
     </button>
   );
 };

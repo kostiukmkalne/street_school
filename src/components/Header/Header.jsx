@@ -1,26 +1,37 @@
 import React from "react";
 import "./Header.scss";
 import { Navigation } from "../Navigation/Navigation";
-import logo from "../../assets/logo.svg";
+import { Button } from '../Button/Button';
+import logo from "../../assets/logoBlack.svg";
 import eng from "../../assets/engLang.svg";
 import ua from "../../assets/uaLang.svg";
 
 export const Header = () => (
   <header className="header">
     <a href="#header">
-      <img src={logo} className="logo" alt="logo" />
+      <img src={logo} className="header__logo" alt="logo" />
     </a>
 
-    <Navigation className="navigation" />
+    <Navigation className="header__nav" />
 
-    <div className="language-block">
-      <a href="#home">
-        <img src={eng} className="en-language" alt="#eng" />
-      </a>
+    <div className="header__lang-block">
+      <Button
+        className="header__lang-button"
+      >
+        <img
+          src={eng}
+          alt="english-language"
+        />
+      </Button>
 
-      <a href="#home">
-        <img src={ua} className="ua-language" alt="#ua" />
-      </a>
+      <Button
+        className="header__lang-button"
+      >
+        <img
+          src={ua}
+          alt="ukrainian-language"
+        />
+      </Button>
     </div>
   </header>
 );
