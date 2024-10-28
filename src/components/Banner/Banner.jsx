@@ -4,7 +4,7 @@ import { Button } from "../Button/Button";
 import arrdown from '../../assets/arrowDown.svg';
 import stars from "../../assets/stars.svg";
 import video from "../../assets/video/presentation.MP4";
-import videoImg from "../../assets/video-img.svg";
+import videoImg from "../../assets/teamImg/lucy.svg";
 
 export const Banner = () => (
   <div className="banner-page">

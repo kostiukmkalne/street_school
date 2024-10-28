@@ -2,7 +2,8 @@ import React from "react";
 import { Header } from "./components/Header/Header";
 import { Banner } from './components/Banner/Banner';
 // import { Values } from "./pages/Values/Values";
-import { Mission } from "./pages/Mission/Mission";
+// import { Mission } from "./pages/Mission/Mission";
+import { Team } from "./pages/Team/Team";
 
 const App = () => {
   return (
@@ -10,7 +11,8 @@ const App = () => {
       <Header />
       <Banner />
       {/* <Values /> */}
-      <Mission />
+      {/* <Mission /> */}
+      <Team />
     </div>
   );
 };
