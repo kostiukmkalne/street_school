@@ -32,10 +32,11 @@ $line-height: 1.2;
   }
 
   &__block-clients {
-    display: inline;
+    display: inline-flex;
     margin: 135.5px 462px 0 0;
     align-items: center;
     gap: 2.5px;
+
   }
 
   &__stars-img {
