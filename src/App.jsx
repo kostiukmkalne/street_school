@@ -4,7 +4,7 @@ import { Banner } from './components/Banner/Banner';
 // import { Values } from "./pages/Values/Values";
 // import { Mission } from "./pages/Mission/Mission";
 // import { Team } from "./pages/Team/Team";
-import { Feedback } from './pages/Feedback/Feedback';
+// import { Feedback } from './pages/Feedback/Feedback';
 
 const App = () => {
   return (
@@ -14,7 +14,7 @@ const App = () => {
       {/* <Values /> */}
       {/* <Mission /> */}
       {/* <Team /> */}
-      <Feedback />
+      {/* <Feedback /> */}
     </div>
   );
 };
