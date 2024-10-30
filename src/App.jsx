@@ -3,7 +3,8 @@ import { Header } from "./components/Header/Header";
 import { Banner } from './components/Banner/Banner';
 // import { Values } from "./pages/Values/Values";
 // import { Mission } from "./pages/Mission/Mission";
-import { Team } from "./pages/Team/Team";
+// import { Team } from "./pages/Team/Team";
+import { Feedback } from './pages/Feedback/Feedback';
 
 const App = () => {
   return (
@@ -12,7 +13,8 @@ const App = () => {
       <Banner />
       {/* <Values /> */}
       {/* <Mission /> */}
-      <Team />
+      {/* <Team /> */}
+      <Feedback />
     </div>
   );
 };
