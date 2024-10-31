@@ -5,8 +5,9 @@ import { Banner } from './components/Banner/Banner';
 // import { Mission } from "./pages/Mission/Mission";
 // import { Team } from "./pages/Team/Team";
 // import { Feedback } from './pages/Feedback/Feedback';
-// import { Quote } from './pages/Quote/Quote';
-import { Education } from "./pages/Education/Education";
+// import { Phrase } from "./pages/Phrase/Phrase";
+// import { Education } from "./pages/Education/Education";
+import { Progress } from "./pages/Progress/Progress";
 
 const App = () => {
   return (
@@ -17,8 +18,9 @@ const App = () => {
       <Mission />
       <Team />
       <Feedback />
-      <Quote /> */}
-      <Education />
+      <Phrase />
+      <Education /> */}
+      <Progress />
     </div>
   );
 };

@@ -1,6 +1,6 @@
 import "./Team.scss";
 import palms from "../../assets/palms.svg";
-import { images } from "./teamImages"; // Adjust the path as necessary
+import { images } from "./teamImages";
 
 export const Team = () => (
   <div className="team__page">

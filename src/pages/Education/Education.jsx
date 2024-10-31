@@ -1,12 +1,12 @@
 import React from "react";
 import "./Education.scss";
 import { Button } from "../../components/Button/Button";
-import TrainingGroup from "./components/TrainingGroup";
-import BenefitsList from "./components/BenefitsList";
-import telPlane from "../../assets/education/telPlane.svg";
-import { trainingData, benefits } from "./data"; // Adjust the path accordingly
+import TrainingGroup from "./TrainingGroup";
+import BenefitsList from "./BenefitsList";
+import telPlane from "../../assets/media/telPlane.svg";
+import { trainingData, benefits } from "./data";
 
-const Education = () => {
+export const Education = () => {
   return (
     <div className="education">
       <h1 className="education__main--title">
@@ -33,5 +33,3 @@ const Education = () => {
     </div>
   );
 };
-
-export default Education;
