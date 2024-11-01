@@ -7,7 +7,9 @@ import { Banner } from './components/Banner/Banner';
 // import { Feedback } from './pages/Feedback/Feedback';
 // import { Phrase } from "./pages/Phrase/Phrase";
 // import { Education } from "./pages/Education/Education";
-import { Progress } from "./pages/Progress/Progress";
+// import { Progress } from "./pages/Progress/Progress";
+// import { Partners } from "./pages/Partners/Partners";
+// import { Question } from "./pages/Question/Question";
 
 const App = () => {
   return (
@@ -20,7 +22,9 @@ const App = () => {
       <Feedback />
       <Phrase />
       <Education /> */}
-      <Progress />
+      {/* <Progress /> */}
+      {/* <Partners /> */}
+      {/* <Question /> */}
     </div>
   );
 };
