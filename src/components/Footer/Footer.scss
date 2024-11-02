@@ -5,15 +5,20 @@
   // max-width: 1265px;
   margin: 0 auto;
   padding: 20px;
-  // gap: 556px;
+  gap: 170px;
 
   &__logo {
     display: block;
-    margin-bottom: 20px;
+    margin: 40px 102px;
   }
 
   &__nav {
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
     margin-bottom: 20px;
+    // max-width: 600px;
+    // white-space: nowrap;
   }
 
   &__toggle-arrow {

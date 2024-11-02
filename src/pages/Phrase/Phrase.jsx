@@ -1,5 +1,5 @@
 import "./Phrase.scss";
-import ludvic from "../../assets/quote/ludvic.svg";
+import ludvic from "../../assets/phrase/ludvic.svg";
 
 export const Phrase = () => (
   <div className="phrase">
