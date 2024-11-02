@@ -10,6 +10,7 @@ import { Banner } from './components/Banner/Banner';
 // import { Progress } from "./pages/Progress/Progress";
 // import { Partners } from "./pages/Partners/Partners";
 // import { Question } from "./pages/Question/Question";
+import { Media } from "./pages/Media/Media";
 
 const App = () => {
   return (
@@ -25,6 +26,7 @@ const App = () => {
       {/* <Progress /> */}
       {/* <Partners /> */}
       {/* <Question /> */}
+      <Media />
     </div>
   );
 };
