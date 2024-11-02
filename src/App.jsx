@@ -11,7 +11,8 @@ import { Banner } from './components/Banner/Banner';
 // import { Partners } from "./pages/Partners/Partners";
 // import { Question } from "./pages/Question/Question";
 // import { Media } from "./pages/Media/Media";
-import { Consultation } from "./pages/Consultation/Consultation";
+// import { Consultation } from "./pages/Consultation/Consultation";
+import { Footer } from "./components/Footer/Footer";
 
 const App = () => {
   return (
@@ -28,7 +29,8 @@ const App = () => {
       {/* <Partners /> */}
       {/* <Question /> */}
       {/* <Media /> */}
-      <Consultation />
+      {/* <Consultation /> */}
+      <Footer />
     </div>
   );
 };

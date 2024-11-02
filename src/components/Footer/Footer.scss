@@ -1,0 +1,29 @@
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  // max-width: 1265px;
+  margin: 0 auto;
+  padding: 20px;
+  // gap: 556px;
+
+  &__logo {
+    display: block;
+    margin-bottom: 20px;
+  }
+
+  &__nav {
+    margin-bottom: 20px;
+  }
+
+  &__toggle-arrow {
+    background-color: transparent;
+    border: none;
+    color: #0077b6;
+    cursor: pointer;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

@@ -1,14 +1,8 @@
 import React from "react";
 import "./Navigation.scss";
+import './NavigationDate.js';
+import { navItems } from "./NavigationDate.js";
 import arrdown from "../../assets/arrowDown.svg";
-
-const navItems = [
-  { href: "#about-us", label: "About Us" },
-  { href: "#feedbacks", label: "Feedbacks" },
-  { href: "#forms-of-education", label: "Forms of Education" },
-  { href: "#q-and-a", label: "Q&A" },
-  { href: "#contacts", label: "Contacts" },
-];
 
 export const Navigation = () => (
   <nav className="nav">

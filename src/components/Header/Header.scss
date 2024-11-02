@@ -19,14 +19,22 @@
   }
 
   &__lang-button {
-    width: 22px;
-    height: 14px;
+    background: transparent; // Без фону
+    border: 2px solid #155FFF; // Оформлення кнопок
+    border-radius: 5px; // Закруглення кутів
+    color: #155FFF; // Колір тексту
+    font-size: 16px; // Розмір шрифту
+    padding: 8px 16px; // Внутрішні відступи
+    cursor: pointer; // Зміна курсора при наведенні
+    transition: background-color 0.3s, color 0.3s; // Анімація
 
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 8;
-    padding: 8px 40px 11px 40px;
+    &:hover {
+      background-color: rgba(21, 95, 255, 0.1); // Фон при наведенні
+      color: #fff; // Колір тексту при наведенні
+    }
+
+    &:not(:last-child) {
+      margin-right: 10px; // Відстань між кнопками
+    }
   }
 }
