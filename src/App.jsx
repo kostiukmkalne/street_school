@@ -10,7 +10,8 @@ import { Banner } from './components/Banner/Banner';
 // import { Progress } from "./pages/Progress/Progress";
 // import { Partners } from "./pages/Partners/Partners";
 // import { Question } from "./pages/Question/Question";
-import { Media } from "./pages/Media/Media";
+// import { Media } from "./pages/Media/Media";
+import { Consultation } from "./pages/Consultation/Consultation";
 
 const App = () => {
   return (
@@ -26,7 +27,8 @@ const App = () => {
       {/* <Progress /> */}
       {/* <Partners /> */}
       {/* <Question /> */}
-      <Media />
+      {/* <Media /> */}
+      <Consultation />
     </div>
   );
 };

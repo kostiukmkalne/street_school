@@ -18,7 +18,7 @@ export const Education = () => {
             <TrainingGroup {...data} />
             <Button className="education__button">
               <h3 className="education__button--text">
-                Telegram is a bot for communication
+                Telegram-bot for communication
               </h3>
               <img
                 src={telPlane}
