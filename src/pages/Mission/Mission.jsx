@@ -1,14 +1,5 @@
-import arrDown from "../../assets/arrowDown.svg";
-
-const MissionBlock = ({ title, text }) => (
-  <div className="mission">
-    <h1 className="mission__title">{title}</h1>
-    <div className="mission__block">
-      <img src={arrDown} className="mission__img" alt="arrow-down" />
-      <p className="mission__text">{text}</p>
-    </div>
-  </div>
-);
+import React from "react";
+import { MissionBlock } from "./MissionBlock";
 
 export const Mission = () => (
   <div className="mission">

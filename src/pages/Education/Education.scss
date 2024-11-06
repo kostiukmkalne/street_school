@@ -1,0 +1,16 @@
+.education {
+  max-width: 100%;
+  margin: 40px 102px;
+  padding: 20px;
+
+  &__header {
+    text-align: start;
+    margin-bottom: 104px;
+  }
+
+  &__block {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+}

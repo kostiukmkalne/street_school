@@ -1,4 +1,4 @@
-const valuesData = [
+export const valuesData = [
   {
     title: "Justice",
     description:
@@ -25,5 +25,3 @@ const valuesData = [
       "Constantly practice and improve their skills, and give them their full potential during the educational process.",
   },
 ];
-
-export default valuesData;

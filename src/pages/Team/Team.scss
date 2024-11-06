@@ -1,19 +1,16 @@
-.team__page {
-  display: flex;
-  max-width: 1266px;
-  flex-direction: column;
-  justify-content: space-between;
+.team {
+  max-width: 100%;
+  margin: 40px 102px;
+  padding: 20px;
 
   &__titles {
-    display: inline-flex;
+    text-align: start;
+    margin-bottom: 104px;
   }
 
   &__blog {
-    position: relative;
-    display: inline;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
+    display: flex;
+    align-items: center;
     gap: 8px;
 
     &__blog-img {
@@ -48,12 +45,16 @@
 
   &__photos {
     display: flex;
+    gap: 24px;
 
     &__fotos__one {
       display: flex;
       flex-direction: column;
+      margin-bottom: 24px;
     }
   }
 
-
+  &__photo {
+    margin-bottom: 24px;
+  }
 }

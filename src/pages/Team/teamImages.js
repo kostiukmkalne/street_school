@@ -1,15 +1,17 @@
-import * as teamImages from "./index.js";
+import hands from '../../assets/teamImg/hands.svg';
+import group from '../../assets/teamImg/group.svg';
+import person from '../../assets/teamImg/person.svg';
+import book from '../../assets/teamImg/book.svg';
+import phone from '../../assets/teamImg/phone.svg';
+import lucy from '../../assets/teamImg/lucy.svg';
+import insta from '../../assets/teamImg/insta.svg';
 
-export const images = [
-  { src: teamImages.hands, alt: "team-hands" },
-  { src: teamImages.group, alt: "team-group" },
-  { src: teamImages.person, alt: "team-person" },
-  { src: teamImages.book, alt: "team-book" },
-  { src: teamImages.phone, alt: "team-phone" },
-  { src: teamImages.lucy, alt: "team-Lucy" },
-  {
-    src: teamImages.insta,
-    alt: "instagram",
-    link: "https://www.instagram.com/street_english_school_online?igsh=MTZqNmhmNmh0MWUxcQ==",
-  },
-];
+export const images = {
+  hands: { src: hands, alt: "Hands" },
+  group: { src: group, alt: "Group" },
+  person: { src: person, alt: "Person" },
+  book: { src: book, alt: "Book" },
+  phone: { src: phone, alt: "Phone" },
+  lucy: { src: lucy, alt: "Lucy" },
+  insta: { src: insta, alt: "Instagram" },
+};
