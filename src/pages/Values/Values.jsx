@@ -1,39 +1,57 @@
 import React from "react";
 import "./Values.scss";
 import goals from "../../assets/goals.svg";
-import { valuesData } from "./ValuesDate.js";
+import { useTranslation } from "react-i18next";
 
-export const Values = () => (
-  <div className="values">
-    <div className="values__header">
-      <div className="values__info">
-        <img src={goals} className="values__info-img" alt="made-goals" />
-        <h6 className="values__info-title">Our Values</h6>
+export const Values = () => {
+  const { t } = useTranslation();
+
+  const values = t("values.points", { returnObjects: true });
+
+  return (
+    <div className="values">
+      <div className="values__header">
+        <div className="values__info">
+          <img src={goals} className="values__info-img" alt="made-goals" />
+          <h6 className="values__info-title">{t("values.title")}</h6>{" "}
+        </div>
+        <h1 className="values__main-title">
+          {t("values.subtitle")
+            .split(" ")
+            .map((word, index) => (
+              <React.Fragment key={index}>
+                {index === 2 ? (
+                  <span className="values__highlight">{word}</span>
+                ) : (
+                  word
+                )}{" "}
+              </React.Fragment>
+            ))}
+        </h1>
       </div>
-      <h1 className="values__main-title">Your Goal - Our Motivation</h1>
+
+      <div className="values__content">
+        <div className="values__first-column">
+          {renderPoint(values[0].title, values[0].description, 0)}{" "}
+        </div>
+
+        <div className="values__second-column">
+          {renderPoint(values[1].title, values[1].description, 1)}{" "}
+          {renderPoint(values[2].title, values[2].description, 2)}{" "}
+        </div>
+
+        <div className="values__third-column">
+          {renderPoint(values[3].title, values[3].description, 3)}{" "}
+          {renderPoint(values[4].title, values[4].description, 4)}{" "}
+        </div>
+      </div>
     </div>
-
-    <div className="values__content">
-      <div className="values__first-column">
-        {renderPoint("Justice", valuesData[0].description, 0)}
-      </div>
-
-      <div className="values__second-column">
-        {renderPoint("Industry", valuesData[1].description, 1)}
-        {renderPoint("Creativity", valuesData[2].description, 2)}
-      </div>
-
-      <div className="values__third-column">
-        {renderPoint("Order", valuesData[3].description, 3)}
-        {renderPoint("Skill", valuesData[4].description, 4)}
-      </div>
-    </div>
-  </div>
-);
+  );
+};
 
 const renderPoint = (title, description, key) => (
   <div key={key} className="values__points-title">
     <h2 className="values__title">{title}</h2>
-    <div className="values__text-description">{description}</div>
+    <h6 className="values__text-description">{description}</h6>{" "}
   </div>
 );

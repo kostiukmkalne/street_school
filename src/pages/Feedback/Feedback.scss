@@ -1,50 +1,184 @@
-// .feedback {
-//   &__header { /* Головний блок для заголовка */
-//     &-block { /* Вкладений блок з іконкою і заголовком */
-//       &-img { /* Зображення іконки думок */
-//       }
-//     }
-//     &-title { /* Заголовок "Feedback about us" */
-//     }
-//   }
+.feedback {
+  max-width: 100%;
+  margin: 40px 102px;
+  padding: 20px;
+  flex-direction: row;
 
-//   &__main-title { /* Основний заголовок "Feedback on our success" */
-//   }
+  &__column {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    flex: 1;
+  }
 
-//   &__button { /* Кнопка */
-//   }
+  &__header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 74px;
+  }
 
-//   &__company-feedbacks { /* Блок відгуків компаній */
-//     &-company { /* Блок кожної компанії */
-//       &-logo { /* Логотип компанії */
-//       }
-//       &-text { /* Текст відгуку */
-//       }
-//       &-person { /* Блок з інформацією про людину */
-//         &-img { /* Зображення особи */
-//         }
-//         &-name { /* Ім'я особи */
-//         }
-//         &-position { /* Посада особи */
-//         }
-//         &-score { /* Оцінка (зображення) */
-//         }
-//       }
-//     }
-//   }
+  &__cluster {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
 
-//   &__client-feedbacks { /* Блок відгуків клієнтів */
-//     &-client { /* Блок кожного клієнта */
-//       &-text { /* Текст відгуку */
-//       }
-//       &-info { /* Блок інформації про клієнта */
-//         &-img { /* Зображення клієнта */
-//         }
-//         &-name { /* Ім'я клієнта */
-//         }
-//         &-score { /* Оцінка (зображення) */
-//         }
-//       }
-//     }
-//   }
-// }
+    &-img {
+      width: 16px;
+      height: 16px;
+      margin-right: 8px;
+    }
+  }
+
+  &__main-title {
+    margin-top: -12px;
+  }
+
+  &__switch {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: 74px;
+    margin-bottom: 74px;
+  }
+
+  .button {
+    width: 15%;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 8px 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    background: #f2f2f2;
+    border: 1px solid #d3d3d3;
+    box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.1),
+              0px 1px 2px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+
+    &:hover {
+      background: #e0e0e0; /* Трохи темніший фон при наведенні */
+      box-shadow: inset 0px 0px 8px rgba(0, 0, 0, 0.15),
+                  0px 2px 4px rgba(0, 0, 0, 0.1); /* Підсилення тіні */
+    }
+
+    &.active {
+      background: #d6d6d6; /* Інший фон для активної кнопки */
+      border: 1px solid #b0b0b0; /* Темніша рамка */
+      box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.2),
+                  0px 3px 6px rgba(0, 0, 0, 0.15); /* Глибше заглиблення */
+    }
+  }
+
+  &__company {
+    height: 360px;
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    text-align: start;
+    width: calc(33.33% - 8px);
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  &__logo {
+    width: 80px;
+    height: auto;
+    margin-bottom: 16px;
+  }
+
+  &__person {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    margin-bottom: 10px;
+
+    &-img {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      margin-right: 16px;
+    }
+
+    &-name,
+    &-position {
+      text-align: left;
+      margin: 0;
+      flex-grow: 1;
+    }
+
+    &-score {
+      margin-left: auto;
+    }
+  }
+
+//--//--//
+
+  &__clients {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  &__card {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    text-align: start;
+    width: calc(33.33% - 8px);
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  &__block {
+    display: inline-flex;
+    flex-direction: row;
+    align-items: start;
+    margin-top: 10px;
+    width: 100%;
+
+    &-img {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      margin-right: 16px;
+    }
+
+    &-cluster {
+      margin-left: 8px;
+    }
+
+    &-name {
+      margin-top: 10px;
+      text-align: left;
+
+    }
+
+    &-status {
+      text-align: left;
+      font-size: 0.4em;
+      color: #888;
+       margin-top: -20px;
+    }
+
+    &-rate {
+      margin-left: auto;
+    }
+  }
+}

@@ -2,10 +2,12 @@
   display: inline-flex;
   align-items: center;
   justify-content: space-between;
+  width: 100%;
+  margin: 40px 102px;
 
   &__logo {
     display: block;
-    margin: 40px 102px;
+    margin-right: 100px;
   }
 
   &__nav {
@@ -14,27 +16,40 @@
     justify-content: space-between;
   }
 
-  &__lang-block {
-    display: inline-flex;
+  &__langButton {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin-right: 100px;
   }
 
-  &__lang-button {
-    background: transparent; // Без фону
-    border: 2px solid #155FFF; // Оформлення кнопок
-    border-radius: 5px; // Закруглення кутів
-    color: #155FFF; // Колір тексту
-    font-size: 16px; // Розмір шрифту
-    padding: 8px 16px; // Внутрішні відступи
-    cursor: pointer; // Зміна курсора при наведенні
-    transition: background-color 0.3s, color 0.3s; // Анімація
+  .button {
+    width: 65%;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 8px 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    background: #f2f2f2;
+    border: 1px solid #d3d3d3;
+    box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.1),
+                0px 1px 2px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
 
     &:hover {
-      background-color: rgba(21, 95, 255, 0.1); // Фон при наведенні
-      color: #fff; // Колір тексту при наведенні
+      background: #e0e0e0; /* Трохи темніший фон при наведенні */
+      box-shadow: inset 0px 0px 8px rgba(0, 0, 0, 0.15),
+                  0px 2px 4px rgba(0, 0, 0, 0.1); /* Підсилення тіні */
     }
 
-    &:not(:last-child) {
-      margin-right: 10px; // Відстань між кнопками
+    &.active {
+      background: #d6d6d6; /* Інший фон для активної кнопки */
+      border: 1px solid #b0b0b0; /* Темніша рамка */
+      box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.2),
+                  0px 3px 6px rgba(0, 0, 0, 0.15); /* Глибше заглиблення */
     }
   }
 }

@@ -1,19 +1,42 @@
-// .phrase {
-//   &__block { /* Головний блок цитати */
-//   }
+.phrase {
+  margin-top: 91px;
+  margin-bottom: 158px;
 
-//   &__text { /* Текст цитати */
-//   }
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
-//   &__person { /* Блок з інформацією про людину */
-//     &-img { /* Зображення особи */
-//     }
-//     &-name { /* Ім'я особи */
-//     }
-//     &-position { /* Позиція або професія особи */
-//     }
-//   }
+  &__person {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 16px;
+  }
 
-//   &__main { /* Основний текст розширення комунікацій */
-//   }
-// }
+  &__person-block {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__person-name {
+    display: block;
+    text-align: center;
+    margin-bottom: 6px;
+  }
+
+  &__person-position {
+    display: block;
+    text-align: start;
+    margin-top: 0;
+  }
+
+  &__main {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    margin-top: 66px;
+  }
+}

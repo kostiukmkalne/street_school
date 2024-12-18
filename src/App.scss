@@ -1,3 +1,5 @@
+@import './fonts';
+
 * {
   width: 1265px;
   height: 838px;
@@ -8,5 +10,26 @@
 }
 
 html {
-  font-family: 'e-Ukraine Head;';
+  font-family: 'e-Ukraine Head';
 }
+
+// @font-face {
+//   font-family: 'e-Ukraine Head';
+//   src: url('./fonts/e-Ukraine-Head-Regular.woff2') format('woff2');
+//   font-weight: 400;
+//   font-style: normal;
+// }
+
+// @font-face {
+//   font-family: 'e-Ukraine Head';
+//   src: url('./fonts/e-Ukraine-Head-Bold.woff2') format('woff2');
+//   font-weight: 700;
+//   font-style: normal;
+// }
+
+// @font-face {
+//   font-family: 'e-Ukraine Head';
+//   src: url('./fonts/e-Ukraine-Head-Italic.woff2') format('woff2');
+//   font-weight: 400;
+//   font-style: italic;
+// }

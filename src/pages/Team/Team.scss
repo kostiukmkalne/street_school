@@ -13,26 +13,10 @@
     align-items: center;
     gap: 8px;
 
-    &__blog-img {
+    &-img {
       display: block;
-      width: 11px;
-      height: 11px;
-    }
-
-    &__blog-title {
-      display: block;
-      flex-direction: row;
-      justify-content: flex-start;
-      align-items: center;
-      order: 1;
-
-      color: rgb(55, 55, 55);
-      font-family: Inter;
-      font-size: 14px;
-      font-weight: 700;
-      line-height: 120%;
-      letter-spacing: 0px;
-      text-align: left;
+      width: 16px;
+      height: 16px;
     }
   }
 
@@ -41,10 +25,12 @@
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
+    margin-top: -10px;
   }
 
   &__photos {
     display: flex;
+    margin-top: -30px;
     gap: 24px;
 
     &__fotos__one {

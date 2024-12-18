@@ -11,17 +11,12 @@
   &__info {
     display: flex;
     align-items: center;
-    margin-bottom: 8px;
+    margin-bottom: 0;
 
     &-img {
-      width: 24px;
-      height: 24px;
+      width: 16px;
+      height: 16px;
       margin-right: 8px;
-    }
-
-    &-title {
-      font-size: 16px;
-      font-weight: 600;
     }
   }
 
@@ -31,7 +26,32 @@
     font-size: 24px;
     font-weight: bold;
     color: #333;
+    margin-top: -15px;
     margin-bottom: 80px;
+
+    margin-top: 0;
+    font-size: 2.5em;
+    line-height: 1.2;
+    font-weight: bold;
+    font-family: e-Ukraine Head;
+    font-size: 62px;
+    font-weight: 700;
+    line-height: 100%;
+    letter-spacing: -2%;
+    text-align: left;
+  }
+
+  &__highlight {
+    color: #9BC5E9; // Основний синій колір тексту
+    -webkit-text-stroke: 1px #9BC5E9; // Синя обводка тексту
+    font-size: inherit; // Залишаємо розмір тексту таким самим
+    font-style: italic;
+    font-family: "Pacifico";
+    font-size: 90px;
+    font-weight: 400;
+    line-height: 100%;
+    letter-spacing: -2%;
+    text-align: left;
   }
 
   &__content {
@@ -39,10 +59,16 @@
     justify-content: space-between;
   }
 
-  &__first-column, &__second-column, &__third-column {
+  &__first-column {
     display: flex;
     flex-direction: column;
-    width: 18%;
+    width: 13%;
+    height: auto;
+  }
+  &__second-column, &__third-column {
+    display: flex;
+    flex-direction: column;
+    width: 28%;
     height: auto;
   }
 

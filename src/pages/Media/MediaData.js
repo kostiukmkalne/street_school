@@ -8,26 +8,26 @@ export const socialMediaLinks = [
   {
     href: "https://www.facebook.com/profile.php?id=100089757411045",
     img: facebook,
-    alt: "facebook-img",
+    alt: "Facebook",
   },
   {
     href: "https://www.instagram.com/street_english_school_online?igsh=MTZqNmhmNmh0MWUxcQ==",
     img: instagram,
-    alt: "instagram-img",
+    alt: "Instagram",
   },
   {
     href: "https://www.linkedin.com/in/streetenglish-school-a5126b284",
     img: linkedIn,
-    alt: "linkedIn-img",
+    alt: "LinkedIn",
   },
   {
     href: "https://t.me/bot_street_english_school_bot",
     img: telegram,
-    alt: "telegram-img",
+    alt: "Telegram",
   },
   {
     href: "https://www.youtube.com/@vikiandlucyteachers8023",
     img: youtube,
-    alt: "youtube-img",
+    alt: "YouTube",
   },
 ];

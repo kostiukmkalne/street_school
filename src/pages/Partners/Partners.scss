@@ -1,4 +1,6 @@
 .partners {
+  margin: 0 auto;
+
   &__header {
     display: flex;
     flex-direction: column;
@@ -12,15 +14,9 @@
     margin-bottom: 10px;
 
     &-img {
-      width: 24px;
-      height: 24px;
+      width: 16px;
+      height: 16px;
       margin-right: 8px;
-    }
-
-    &-title {
-      font-size: 16px;
-      font-weight: 600;
-      color: #333;
     }
   }
 
@@ -29,17 +25,29 @@
     font-weight: bold;
     text-align: center;
     color: #333;
+    margin-top: -15px;
+    margin-bottom: 80px;
   }
 
   &__container {
     display: flex;
     justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
+    gap: 24px;
   }
 
-  &__company-logo {
-    width: 80px;
-    height: auto;
+  &__company {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    padding: 42px 42px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+    &-img {
+      width: 144px;
+      height: 144px;
+    }
   }
 }

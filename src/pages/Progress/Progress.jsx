@@ -1,27 +1,34 @@
+import React from "react";
 import "./Progress.scss";
-import { progressData } from "./ProgressData";
 import medal from "../../assets/medal.svg";
-import { ProgressBlock } from "./ProgressBlock.js";
+import { useTranslation } from "react-i18next";
 
-export const Progress = () => (
-  <div className="progress">
-    <div className="progress__header">
-      <div className="progress__info">
-        <img src={medal} className="progress__info-img" alt="medal-img" />
-        <h6 className="progress__info-title">Why choose us?</h6>
+export const Progress = () => {
+  const { t } = useTranslation();
+
+  const progressItems = t("progress.items", { returnObjects: true });
+
+  return (
+    <div className="progress">
+      <div className="progress__titles">
+        <div className="progress__info">
+          <img src={medal} className="progress__info-img" alt="medal-img" />
+          <h6 className="progress__info-title">{t("progress.main")}</h6>
+        </div>
+        <h1 className="progress__main-title">{t("progress.subtitle")}</h1>
       </div>
-      <h1 className="progress__title">We help you achieve more</h1>
-    </div>
 
-    <div className="progress__container">
-      {progressData.map((item, index) => (
-        <ProgressBlock
-          key={index}
-          imgSrc={item.imgSrc}
-          alt={item.alt}
-          text={item.text}
-        />
-      ))}
+      <div className="progress__columns">
+        {progressItems.map(({ imgSrc, alt, title, text }, index) => (
+          <div className="progress__block" key={index}>
+            <div className="progress__content">
+              <img src={imgSrc} className="progress__content-img" alt={alt} />
+              <h5 className="progress__content-title">{title}</h5>
+            </div>
+            <h6 className="progress__content-text">{text}</h6>
+          </div>
+        ))}
+      </div>
     </div>
-  </div>
-);
+  );
+};
