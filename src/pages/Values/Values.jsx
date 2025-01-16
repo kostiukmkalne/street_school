@@ -15,19 +15,8 @@ export const Values = () => {
           <img src={goals} className="values__info-img" alt="made-goals" />
           <h6 className="values__info-title">{t("values.title")}</h6>{" "}
         </div>
-        <h1 className="values__main-title">
-          {t("values.subtitle")
-            .split(" ")
-            .map((word, index) => (
-              <React.Fragment key={index}>
-                {index === 2 ? (
-                  <span className="values__highlight">{word}</span>
-                ) : (
-                  word
-                )}{" "}
-              </React.Fragment>
-            ))}
-        </h1>
+
+        <h1 className="team__main-title">{t("values.subtitle")}</h1>
       </div>
 
       <div className="values__content">

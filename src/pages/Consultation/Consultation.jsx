@@ -11,8 +11,8 @@ export const Consultation = () => {
     <div className="consultation">
       <div className="consultation__header">
         <div className="consultation__info">
-          <img src={phone} className="consultation__infoImg" alt="phone" />
-          <h6 className="consultation__infoTitle">{t("comunication.title")}</h6>
+          <img src={phone} className="consultation__info-img" alt="phone" />
+          <h6 className="consultation__info-title">{t("comunication.title")}</h6>
         </div>
         <h1 className="consultation__title">{t("comunication.subtitle")}</h1>
       </div>

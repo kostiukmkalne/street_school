@@ -1,22 +1,12 @@
-// @font-face {
-//   font-family: "e-Ukraine Head";
-//   src: url("../src/fonts/e-Ukraine/e-Ukraine-Regular.otf") format("opentype");
-//   font-weight: 400; /* Regular */
-// }
-
-// @font-face {
-//   font-family: "e-Ukraine Head";
-//   src: url("../src/fonts/e-Ukraine/e-Ukraine-Bold.otf") format("opentype");
-//   font-weight: 700; /* Bold */
-// }
-
 @font-face {
-  font-family: "e-Ukraine Head", sans-serif;
+  font-family: e-Ukraine Head, Roboto, Arial;
   src:
-    local("e-Ukraine Head"),
     url("../src/fonts/e-Ukraine/e-Ukraine-Bold.otf") format("opentype") tech(color-COLRv1),
     url("../src/fonts/e-Ukraine/e-Ukraine-Regular.otf") format("opentype"),
     url("../src/fonts/e-Ukraine/e-Ukraine-UltraLight.otf") format("woff");
+    // url('../fonts/Roboto-Regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
 }
 
 * {
@@ -29,5 +19,5 @@
 }
 
 html {
-  font-family: 'e-Ukraine Head';
+  font-family: 'e-Ukraine Head', serif;
 }

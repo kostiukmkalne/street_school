@@ -25,8 +25,8 @@ export const Banner = () => {
             {t("banner.main_title", { returnObjects: true }).map(
               (line, index) => (
                 <React.Fragment key={index}>
-                  {index === 2 ? ( // Це третій рядок (з англійською!)
-                    <span className="banner__highlight">{line}</span> // Додаємо спеціальний стиль
+                  {index === 2 ? (
+                    <span className="banner__highlight">{line}</span>
                   ) : (
                     line
                   )}

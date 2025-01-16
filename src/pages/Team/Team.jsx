@@ -14,6 +14,7 @@ export const Team = () => {
           <img src={palms} className="team__blog-img" alt="palm-img" />
           <h6 className="team__blog-title">{t("team.title")}</h6>
         </div>
+
         <h1 className="team__main-title">{t("team.subtitle")}</h1>
       </div>
 
