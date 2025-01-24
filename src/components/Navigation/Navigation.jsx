@@ -1,26 +1,34 @@
 import React from "react";
-import "./Navigation.scss";
+import { useTranslation } from "react-i18next";
 import arrdown from "../../assets/arrowDown.svg";
+import "./Navigation.scss";
 
-const navItems = [
-  { href: "#about-us", label: "About Us" },
-  { href: "#feedbacks", label: "Feedbacks" },
-  { href: "#forms-of-education", label: "Forms of Education" },
-  { href: "#q-and-a", label: "Q&A" },
-  { href: "#contacts", label: "Contacts" },
-];
+export const Navigation = () => {
+  const { t } = useTranslation();
 
-export const Navigation = () => (
-  <nav className="nav">
-    <ul className="nav__list">
-      {navItems.map((item, index) => (
-        <li className="nav__item" key={index}>
-          <a className="nav__link" href={item.href}>
-            {item.label}
-            <img src={arrdown} className="nav__arrDown" alt="arrow-down" />
-          </a>
-        </li>
-      ))}
-    </ul>
-  </nav>
-);
+  return (
+    <nav className="nav">
+      <ul className="nav__list">
+        {t("navigation.nav", { returnObjects: true }).map(
+          (
+            item,
+            index
+          ) => (
+            <li className="nav__item" key={index}>
+              <a className="nav__link" href={item.href}>
+                {item.label}
+                {item.hasArrow !== false && (
+                  <img
+                    src={arrdown}
+                    className="nav__arrDown"
+                    alt="arrow-down"
+                  />
+                )}
+              </a>
+            </li>
+          )
+        )}
+      </ul>
+    </nav>
+  );
+};

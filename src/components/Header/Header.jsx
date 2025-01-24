@@ -1,37 +1,43 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Header.scss";
+import { useTranslation } from "react-i18next";
 import { Navigation } from "../Navigation/Navigation";
-import { Button } from '../Button/Button';
+import { Button } from "../../components/Button/Button.jsx";
 import logo from "../../assets/logoBlack.svg";
-import eng from "../../assets/engLang.svg";
-import ua from "../../assets/uaLang.svg";
 
-export const Header = () => (
-  <header className="header">
-    <a href="#header">
-      <img src={logo} className="header__logo" alt="logo" />
-    </a>
+export const Header = () => {
+  const { i18n } = useTranslation();
+  const [isEnglish, setIsEnglish] = useState(i18n.language === "en");
 
-    <Navigation className="header__nav" />
+  const changeLanguage = (lang) => {
+    i18n.changeLanguage(lang);
+    setIsEnglish(lang === "en");
+  };
 
-    <div className="header__lang-block">
-      <Button
-        className="header__lang-button"
+  return (
+    <header className="header">
+      <a href="#header">
+        <img src={logo} className="header__logo" alt="Company logo" />
+      </a>
+
+      <Navigation className="header__nav" />
+
+      <div
+        className="header__langButton"
       >
-        <img
-          src={eng}
-          alt="english-language"
-        />
-      </Button>
-
-      <Button
-        className="header__lang-button"
-      >
-        <img
-          src={ua}
-          alt="ukrainian-language"
-        />
-      </Button>
-    </div>
-  </header>
-);
+        <Button
+          onClick={() => changeLanguage("ua")}
+          className={`lang-button ${!isEnglish ? "active" : ""}`}
+        >
+          UA
+        </Button>
+        <Button
+          onClick={() => changeLanguage("en")}
+          className={`button ${isEnglish ? "active" : ""}`}
+        >
+          EN
+        </Button>
+      </div>
+    </header>
+  );
+};

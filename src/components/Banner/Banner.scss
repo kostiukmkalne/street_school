@@ -1,41 +1,74 @@
-$primary-color: rgb(55, 55, 55);
-$font-family: 'Inter', sans-serif;
-$font-size: 1rem;
-$font-weight: 700;
-$line-height: 1.2;
-
-* {
-  font-family: $font-family;
-  color: $primary-color;
-  line-height: $line-height;
-  font-weight: $font-weight;
-}
-
 .banner-page {
-  max-width: 100%;
   display: flex;
   background-image: url('../../assets/bannerBack.svg');
 }
 
 .banner {
-  margin: 0 auto;
+  max-width: 100%;
+  margin: 10px 102px;
   padding: 20px;
   display: flex;
   flex-direction: column;
   background-size: cover;
-  font-size: $font-size;
   text-align: left;
 
   &__titles {
-    display: block;
+    display: flex;
     flex-direction: column;
   }
 
   &__block-clients {
-    display: inline;
+    display: inline-flex;
+  }
+
+  &__stars-img {
+    width: 18px;
+    height: 18px;
+  }
+
+  &__text {
+    font-size: 16px;
+  }
+
+
+
+  &__main-title {
+    margin-top: 0;
+    font-size: 2.5em;
+    line-height: 1.2;
+    font-weight: bold;
+    font-family: e-Ukraine Head;
+    font-size: 62px;
+    font-weight: 700;
+    line-height: 100%;
+    letter-spacing: -2%;
+    text-align: left;
+    margin-top: -20px;
+
+    &-color {
+      color: rgb(155, 197, 233);
+    }
+  }
+
+  &__highlight {
+    color: #9BC5E9; // Основний синій колір тексту
+    -webkit-text-stroke: 1px #9BC5E9; // Синя обводка тексту
+    font-size: inherit; // Залишаємо розмір тексту таким самим
+    font-style: italic;
+    font-family: "Pacifico";
+    font-size: 90px;
+    font-weight: 400;
+    line-height: 100%;
+    letter-spacing: -2%;
+    text-align: left;
+  }
+
+  &__block-clients {
+    display: inline-flex;
     margin: 135.5px 462px 0 0;
     align-items: center;
     gap: 2.5px;
+
   }
 
   &__stars-img {
@@ -43,16 +76,66 @@ $line-height: 1.2;
     height: 16px;
   }
 
+  &__text {
+    white-space: nowrap;
+  }
+
   &__explanation {
-    font-weight: normal;
+    &-text-1 {
+      margin-top: -20px;
+      font-size: 16px;
+      font-weight: normal;
+    }
+
+    &-text-2,
+    &-text-3 {
+      margin-top: -30px;
+      font-weight: normal;
+      font-size: 16px;
+    }
+  }
+
+  .button {
+    width: 35%;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 8px 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    background: linear-gradient(180deg, #9bc5e9, #e3f2ff 100%); /* Градієнтний фон */
+    border: 1px solid #9bc5e9; /* Тонка рамка під градієнт */
+    box-shadow: inset 0px -3px 0px #9bc5e9,
+                0px 1px 2px rgba(0, 0, 0, 0.05),
+                0px 4px 4px rgba(0, 0, 0, 0.04); /* Стильна тінь */
+    transition: all 0.3s ease; /* Плавні переходи */
+
+    &:hover {
+      background: linear-gradient(180deg, #8fb4d8, #d5e8f9 100%); /* Трохи темніший фон */
+      border: 1px solid #8fb4d8; /* Підсвічення рамки */
+      box-shadow: inset 0px -3px 0px #8fb4d8,
+                  0px 2px 4px rgba(0, 0, 0, 0.1); /* Більша тінь */
+    }
+
+    &.active {
+      background: linear-gradient(180deg, #78a7c8, #c8e2f7 100%); /* Активний фон */
+      border: 1px solid #78a7c8; /* Темніша рамка */
+      box-shadow: inset 0px -5px 0px #78a7c8,
+                  0px 4px 8px rgba(0, 0, 0, 0.2); /* Глибше заглиблення */
+    }
   }
 }
 
 .video {
   &__size {
-    height: 638px;
-    width: 494px;
+    display: flex;
+    height: 540px;
+    width: 400px;
     border-radius: 12px;
+
+    margin-left: -70px;
   }
 }
 

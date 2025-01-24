@@ -1,0 +1,97 @@
+// Міксин для обробки hover ефектів
+@mixin hover($property, $toValue) {
+  transition: #{$property} 0.3s ease;
+  &:hover {
+    #{$property}: $toValue;
+  }
+}
+
+// Міксин для обробки hover-ефекту для іконок
+@mixin hover-icon($transform: null, $color: null) {
+  cursor: pointer;
+  transition: all 0.3s ease;
+
+  &:hover {
+    @if $transform {
+      transform: $transform;
+    }
+    @if $color {
+      path {
+        fill: $color;
+      }
+    }
+  }
+}
+
+// Міксин для медіа-запитів
+@mixin on-mobile {
+  @media (max-width: 767px) {
+    @content;
+  }
+}
+
+@mixin on-tablet {
+  @media (min-width: 768px) and (max-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin on-desktop {
+  @media (min-width: 1025px) {
+    @content;
+  }
+}
+
+// Міксин для адаптивного відступу по горизонталі
+@mixin content-padding-inline($desktop-padding: 123px, $tablet-padding: 34px, $mobile-padding: 30px) {
+  padding-inline: $desktop-padding;
+
+  @include on-tablet {
+    padding-inline: $tablet-padding;
+  }
+
+  @include on-mobile {
+    padding-inline: $mobile-padding;
+  }
+}
+
+// Міксин для максимального розміру контейнера
+@mixin max-width($desktop-width: 1440px, $tablet-width: 768px, $mobile-width: 320px) {
+  margin-inline: auto;
+  max-width: $desktop-width;
+
+  @include on-tablet {
+    max-width: $tablet-width;
+  }
+
+  @include on-mobile {
+    max-width: $mobile-width;
+  }
+}
+
+// Міксин для сторінки з сіткою
+@mixin page-grid($desktop-columns: 12, $tablet-columns: 8, $mobile-columns: 4) {
+  display: grid;
+  grid-template-columns: repeat($desktop-columns, 1fr);
+  column-gap: 30px;
+
+  @include on-tablet {
+    grid-template-columns: repeat($tablet-columns, 1fr);
+    column-gap: 20px;
+  }
+
+  @include on-mobile {
+    grid-template-columns: repeat($mobile-columns, 1fr);
+    column-gap: 10px;
+  }
+}
+
+// Приклад використання міксинів
+.container {
+  @include content-padding-inline;
+  @include max-width;
+}
+
+.example-grid {
+  @include page-grid;
+}

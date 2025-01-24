@@ -1,43 +1,39 @@
 .mission {
   display: flex;
-  align-items: flex-start; // Сприяє більш рівному вирівнюванню зверху
-  justify-content: space-between;
-  padding: 20px 0;
+  max-width: 100%;
+  margin: 40px 102px;
+  padding: 20px;
+  gap: 80px;
 
   &__block {
-    display: flex;
     flex-direction: row;
-    align-items: flex-start;
-    margin-right: 40px; // Додає простір між блоками
+    justify-content: space-between;
   }
 
   &__title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 56px;
+  }
+
+  &__content {
     display: flex;
-    align-items: center;
-    font-family: "e-Ukraine Head";
-    font-size: 32px;
-    font-weight: 700;
-    color: rgb(55, 55, 55);
-    margin: 0 0 16px; // Зменшено відступ для кращої читабельності
+    align-items: flex-start;
+    gap: 16px;
   }
 
   &__img {
-    width: 14px;
-    height: 14px;
-    margin-right: 8px; // Більша відстань для більш "дихаючого" вигляду
-    transform: rotate(135deg);
-    border: 1.5px solid rgb(155, 197, 233);
-    box-shadow: 1px 1px 0px 0px rgb(255, 255, 255);
+    width: 24px;
+    height: 24px;
+    margin-top: 20px;
   }
 
   &__text {
-    width: 100%; // Автоматично підлаштовується під ширину контейнера
-    max-width: 553px; // Максимальна ширина
-    padding: 24px 0;
-    font-family: "Inter";
     font-size: 18px;
-    font-weight: 400;
     line-height: 1.5;
-    color: rgb(55, 55, 55);
+    color: #555;
+    max-width: 500px;
   }
 }
+
+

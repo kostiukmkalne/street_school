@@ -1,53 +1,110 @@
-$main-color: rgb(55, 55, 55);
-$font-family: Inter;
+// .team {
+//   max-width: 100%;
+//   margin: 40px 102px;
+//   padding: 20px;
 
-.team__page {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  margin: 0 auto;
+//   &__titles {
+//     text-align: start;
+//     margin-bottom: 104px;
+//   }
+
+//   &__blog {
+//     display: flex;
+//     align-items: center;
+//     gap: 8px;
+
+//     &-img {
+//       display: block;
+//       width: 16px;
+//       height: 16px;
+//     }
+//   }
+
+//   &__main-title {
+//     display: flex;
+//     flex-direction: row;
+//     justify-content: flex-start;
+//     align-items: center;
+//     margin-top: -10px;
+//   }
+
+//   &__photos {
+//     display: flex;
+//     margin-top: -30px;
+//     gap: 24px;
+
+//     &__fotos__one {
+//       display: flex;
+//       flex-direction: column;
+//       margin-bottom: 24px;
+//     }
+//   }
+
+//   &__photo {
+//     margin-bottom: 24px;
+//   }
+// }
+
+.team {
+  max-width: 100%;
+  margin: 40px 102px;
   padding: 20px;
 
   &__titles {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
+    text-align: start;
+    margin-top: 8px;
+    margin-bottom: 48px;
   }
 
   &__blog {
     display: flex;
     align-items: center;
-    gap: 2.5px;
+    gap: 8px;
+    margin-bottom: -40px;
 
-    &__blog-img {
-      width: 11px;
-      height: 11px;
+    &-img {
+      display: block;
+      width: 18px;
+      height: 18px;
     }
 
-    &__blog-title {
-      color: $main-color;
-      font-family: $font-family;
-      font-size: 14px;
-      font-weight: 700;
-      line-height: 120%;
-      text-align: left;
+    &-title {
+      font-size: 16px;
     }
   }
 
-  &__main-title {
-    color: $main-color;
-    font-size: 40px;
-    font-weight: 700;
-    margin: 8px 0;
+  &__main-block{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+
+    &-title {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+      font-size: 2.5em;
+
+      &-color {
+        font-size: 2.5em;
+        color: #9BC5E9;;
+      }
+    }
   }
 
   &__photos {
-    display: inline;
-    justify-content: space-around;
-    flex-wrap: wrap; // Додає гнучкість для адаптивності
+    display: flex;
+    margin-top: -30px;
+    gap: 24px;
+
+    &__fotos__one {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 24px;
+    }
   }
 
   &__photo {
-    margin: 24px;
+    margin-bottom: 24px;
   }
 }

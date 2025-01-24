@@ -6,4 +6,12 @@ import phone from "../../assets/teamImg/phone.svg";
 import lucy from "../../assets/teamImg/lucy.svg";
 import insta from "../../assets/teamImg/insta.svg";
 
-export { hands, group, person, book, phone, lucy, insta };
+export const images = {
+  hands: { src: hands, alt: "Hands" },
+  group: { src: group, alt: "Group" },
+  person: { src: person, alt: "Person" },
+  book: { src: book, alt: "Book" },
+  phone: { src: phone, alt: "Phone" },
+  lucy: { src: lucy, alt: "Lucy" },
+  insta: { src: insta, alt: "Instagram" },
+};
