@@ -12,9 +12,22 @@ export const Consultation = () => {
       <div className="consultation__header">
         <div className="consultation__info">
           <img src={phone} className="consultation__info-img" alt="phone" />
-          <h6 className="consultation__info-title">{t("comunication.title")}</h6>
+          <h6 className="consultation__info-title">
+            {t("comunication.title")}
+          </h6>
         </div>
-        <h1 className="consultation__title">{t("comunication.subtitle")}</h1>
+
+        <div className="consultation__main">
+          <h1 className="consultation__main-title">
+            {t("comunication.subtitle")}
+          </h1>
+          <h1 className="consultation__main-title-color">
+            {t("comunication.subtitle_mid")}
+          </h1>
+          <h1 className="consultation__main-title">
+            {t("comunication.subtitle_end")}
+          </h1>
+        </div>
       </div>
 
       <Button

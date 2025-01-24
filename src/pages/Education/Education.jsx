@@ -41,7 +41,18 @@ export const Education = () => {
           <img src={form} className="education__blog-img" alt="form-img" />
           <h6 className="education__blog-title">{t("education.title")}</h6>
         </div>
-        <h1 className="education__title">{t("education.subtitle")}</h1>
+
+        <div className="education__block">
+          <h1 className="education__block-title">
+            {t("education.subtitle")}
+          </h1>
+          <h1 className="education__block-title-color">
+            {t("education.subtitle_middle")}
+          </h1>
+          <h1 className="education__block-title">
+            {t("education.subtitle_end")}
+          </h1>
+        </div>
       </div>
 
       <div className="education__switch">

@@ -15,7 +15,9 @@ export const dataEn = {
   },
   banner: {
     title: "English for Corporate Clients",
-    main_title: ["Expand", "your business horizons", "with English!"],
+    main_title: "Expand",
+    main_title_middle: "your business horizons",
+    main_title_end: "with English!",
     explanation: [
       "English is not only a tool for increasing competitiveness and",
       "business globalization, but also a means of improving staff interaction, as it fosters",
@@ -25,7 +27,8 @@ export const dataEn = {
   },
   values: {
     title: "Our Values",
-    subtitle: "Your goal is our motivation",
+    subtitle: "Your goal",
+    subtitle_end: "is our motivation",
     points: [
       {
         title: "Justice",
@@ -63,11 +66,14 @@ export const dataEn = {
   },
   team: {
     title: "Meet us",
-    subtitle: "A big team for big results",
+    subtitle: "A big team for",
+    subtitle_end: "big results",
   },
   feedback: {
     title: "Feedback about us",
-    subtitle: "Feedback about our success",
+    subtitle: "Feedback",
+    subtitle_main: "about success",
+    subtitle_end: "with us",
     company_feedback: [
       {
         company: "Inoxoft",
@@ -189,15 +195,15 @@ export const dataEn = {
       name: "Ludwig Wittgenstein",
       position: "Philosopher",
     },
-    main_title: [
-      "Expand the possibilities of your communication,",
-      "expand the possibilities",
-      "of your world",
-    ],
+    main_title: "Expand the possibilities",
+    main_title_middle: "of your communication expand the possibilities",
+    main_title_end: "of your world",
   },
   education: {
     title: "Learning Format",
-    subtitle: "Choose the ideal learning format",
+    subtitle: "Choose your",
+    subtitle_middle: "ideal learning",
+    subtitle_end: "format",
     formats: {
       individual: {
         title: "Individual Online Learning",
@@ -322,7 +328,8 @@ export const dataEn = {
   },
   progress: {
     main: "Why Choose Us",
-    subtitle: "We help you achieve more",
+    subtitle: "We help you",
+    subtitle_end: "achieve more",
     items: [
       {
         imgSrc: progressImage.block,
@@ -364,11 +371,14 @@ export const dataEn = {
   },
   partners: {
     title: "Leaders' Trust",
-    subtitle: "Companies that cooperate with us:",
+    subtitle: "Incredible",
+    subtitle_mid: "companies that work",
+    subtitle_end: "with us:",
   },
   question: {
     title: "Q&A",
-    subtitle: "We answer your questions",
+    subtitle: "We answer",
+    subtitle_end: "your questions:",
     questions: [
       {
         question:
@@ -424,11 +434,14 @@ export const dataEn = {
   },
   media: {
     title: "Contact Us",
-    subtitle: "Start your language journey!",
+    subtitle: "Start your",
+    subtitle_end: "language journey!",
   },
   comunication: {
     title: "Learn More",
-    subtitle: "A free consultation is waiting for you!",
+    subtitle: "Free",
+    subtitle_mid: "consultation",
+    subtitle_end: "waiting for you!",
   },
   //--//--//
   telegram: {

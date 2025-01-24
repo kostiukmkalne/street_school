@@ -209,7 +209,7 @@
   &__cluster {
     display: flex;
     align-items: center;
-    margin-bottom: 10px;
+    margin-bottom: -30px;
 
     &-img {
       width: 18px;
@@ -222,10 +222,20 @@
     }
   }
 
-  &__main-title {
+  &__main-block {
+    display: flex;
+    flex-direction: row;
     margin-top: -12px;
-    font-size: 2.5em;
-    font-size: 2.5em;
+    gap: 10px;
+
+    &-title {
+      font-size: 2.5em;
+
+      &-color {
+        color: #9BC5E9;
+        font-size: 2.5em;
+      }
+    }
   }
 
   &__switch {

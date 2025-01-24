@@ -26,13 +26,19 @@ export const Question = () => {
           />
           <h6 className="question__info-title">{t("question.title")}</h6>
         </div>
-        <h1 className="question__main-title">{t("question.subtitle")}</h1>
+
+        <div className="question__main">
+          <h1 className="question__main-title-color">
+            {t("question.subtitle")}
+          </h1>
+          <h1 className="question__main-title">{t("question.subtitle_end")}</h1>
+        </div>
       </div>
 
       <div className="question__container">
         {questions.map((item, index) => (
           <div className="question__item" key={index}>
-            <hr />
+            <hr className="question__item-color" />
             <div
               className="question__item-title"
               onClick={() => toggle(index)}

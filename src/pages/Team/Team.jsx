@@ -15,7 +15,10 @@ export const Team = () => {
           <h6 className="team__blog-title">{t("team.title")}</h6>
         </div>
 
-        <h1 className="team__main-title">{t("team.subtitle")}</h1>
+        <div className="team__main-block">
+          <h1 className="team__main-block-title">{t("team.subtitle")}</h1>
+          <h1 className="team__main-block-title-color">{t("team.subtitle_end")}</h1>
+        </div>
       </div>
 
       <div className="team__photos">

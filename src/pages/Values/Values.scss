@@ -11,7 +11,7 @@
   &__info {
     display: flex;
     align-items: center;
-    margin-bottom: 0;
+    margin-bottom: -40px;
 
     &-img {
       width: 18px;
@@ -23,6 +23,18 @@
       font-size: 16px;
     }
   }
+
+  &__title-block {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+
+    &-color {
+      color: #9BC5E9;
+    }
+  }
+
+
 
   &__main-title {
     display: flex;

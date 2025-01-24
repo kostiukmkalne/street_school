@@ -13,10 +13,15 @@ export const Values = () => {
       <div className="values__header">
         <div className="values__info">
           <img src={goals} className="values__info-img" alt="made-goals" />
-          <h6 className="values__info-title">{t("values.title")}</h6>{" "}
+          <h6 className="values__info-title">{t("values.title")}</h6>
         </div>
 
-        <h1 className="team__main-title">{t("values.subtitle")}</h1>
+        <div className="values__title-block">
+          <h1>{t("values.subtitle")}</h1>
+          <h1 className="values__title-block-color">
+            {t("values.subtitle_end")}
+          </h1>
+        </div>
       </div>
 
       <div className="values__content">

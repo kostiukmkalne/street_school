@@ -25,7 +25,18 @@ export const Feedback = () => {
           />
           <h6 className="feedback__cluster-title">{t("feedback.title")}</h6>
         </div>
-        <h1 className="feedback__main-title">{t("feedback.subtitle")}</h1>
+
+        <div className="feedback__main-block">
+          <h1 className="feedback__main-block-title">
+            {t("feedback.subtitle")}
+          </h1>
+          <h1 className="feedback__main-block-title-color">
+            {t("feedback.subtitle_main")}
+          </h1>
+          <h1 className="feedback__main-block-title">
+            {t("feedback.subtitle_end")}
+          </h1>
+        </div>
       </div>
 
       <div className="feedback__switch">
@@ -47,7 +58,7 @@ export const Feedback = () => {
         </Button>
       </div>
 
-      {selectedFeedback === "client" ? <Client /> : <Company /> }
+      {selectedFeedback === "client" ? <Client /> : <Company />}
     </div>
   );
 };

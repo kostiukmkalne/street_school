@@ -15,7 +15,11 @@ export const Media = () => {
           <img src={phone} className="media__info-img" alt="phone-img" />
           <h6 className="media__info-title">{t("media.title")}</h6>
         </div>
-        <h1 className="media__title">{t("media.subtitle")}</h1>
+
+        <div className="media__main">
+          <h1 className="media__main-title">{t("media.subtitle")}</h1>
+          <h1 className="media__main-title-color">{t("media.subtitle_end")}</h1>
+        </div>
       </div>
 
       <div className="media__social">

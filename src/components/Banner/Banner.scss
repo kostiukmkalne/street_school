@@ -5,7 +5,7 @@
 
 .banner {
   max-width: 100%;
-  margin: 40px 102px;
+  margin: 10px 102px;
   padding: 20px;
   display: flex;
   flex-direction: column;
@@ -43,6 +43,11 @@
     line-height: 100%;
     letter-spacing: -2%;
     text-align: left;
+    margin-top: -20px;
+
+    &-color {
+      color: rgb(155, 197, 233);
+    }
   }
 
   &__highlight {
@@ -76,12 +81,22 @@
   }
 
   &__explanation {
-    margin-top: 0;
-    font-weight: normal;
+    &-text-1 {
+      margin-top: -20px;
+      font-size: 16px;
+      font-weight: normal;
+    }
+
+    &-text-2,
+    &-text-3 {
+      margin-top: -30px;
+      font-weight: normal;
+      font-size: 16px;
+    }
   }
 
   .button {
-    width: 45%;
+    width: 35%;
     height: 48px;
     display: flex;
     align-items: center;
@@ -115,9 +130,12 @@
 
 .video {
   &__size {
-    height: 638px;
-    width: 494px;
+    display: flex;
+    height: 540px;
+    width: 400px;
     border-radius: 12px;
+
+    margin-left: -70px;
   }
 }
 

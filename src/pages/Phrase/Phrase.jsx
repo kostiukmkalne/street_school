@@ -5,7 +5,6 @@ import { useTranslation } from "react-i18next";
 
 export const Phrase = () => {
   const { t } = useTranslation();
-  const main_title = t("phrase.main_title", { returnObjects: true });
 
   return (
     <div className="phrase">
@@ -22,14 +21,11 @@ export const Phrase = () => {
         </div>
       </div>
 
-      <h1 className="phrase__main">
-        {main_title?.map((line, index) => (
-          <React.Fragment key={index}>
-            {line}
-            <br />
-          </React.Fragment>
-        ))}
-      </h1>
+      <div className="phrase__main">
+        <h1 className="phrase__main-title-color">{t("phrase.main_title")}</h1>
+        <h1 className="phrase__main-title">{t("phrase.main_title_middle")}</h1>
+        <h1 className="phrase__main-title-end-color">{t("phrase.main_title_end")}</h1>
+      </div>
     </div>
   );
 };

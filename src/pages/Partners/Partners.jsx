@@ -13,7 +13,18 @@ export const Partners = () => {
           <img src={bag} className="partners__info-img" alt="bag" />
           <h6 className="partners__info-title">{t("partners.title")}</h6>
         </div>
-        <h1 className="partners__title">{t("partners.subtitle")}</h1>
+
+        <div className="partners__main">
+          <h1 className="partners__main-title">
+            {t("partners.subtitle")}
+          </h1>
+          <h1 className="partners__main-title-color">
+            {t("partners.subtitle_mid")}
+          </h1>
+          <h1 className="partners__main-title">
+            {t("partners.subtitle_end")}
+          </h1>
+        </div>
       </div>
 
       <div className="partners__container">

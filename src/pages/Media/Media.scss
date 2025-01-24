@@ -40,12 +40,23 @@
     }
   }
 
-  &__title {
-    font-size: 2.5rem;
-    font-weight: 700;
-    color: #333;
-    margin-top: 0px;
+  &__main {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-top: -40px;
+
+    &-title {
+      font-size: 2.5rem;
+
+      &-color {
+        font-size: 2.5rem;
+        color: #9BC5E9;
+      }
+    }
   }
+
+
 
   .media__social {
     display: flex;

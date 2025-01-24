@@ -15,7 +15,11 @@ export const Progress = () => {
           <img src={medal} className="progress__info-img" alt="medal-img" />
           <h6 className="progress__info-title">{t("progress.main")}</h6>
         </div>
-        <h1 className="progress__main-title">{t("progress.subtitle")}</h1>
+
+        <div className="progress__main">
+          <h1 className="progress__main-title">{t("progress.subtitle")}</h1>
+          <h1 className="progress__main-title-color">{t("progress.subtitle_end")}</h1>
+        </div>
       </div>
 
       <div className="progress__columns">

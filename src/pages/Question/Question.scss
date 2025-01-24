@@ -5,7 +5,7 @@
 
   &__header {
     text-align: start;
-    margin-bottom: 104px;
+    margin-bottom: 80px;
   }
 
   &__info {
@@ -24,12 +24,20 @@
     }
   }
 
-  &__main-title {
-    font-size: 24px;
-    font-weight: bold;
-    color: #333;
-    font-size: 2.5em;
-    margin-top: 0;
+  &__main {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-top: -40px;
+
+    &-title {
+      font-size: 2.5em;
+
+      &-color {
+        font-size: 2.5em;
+        color: #9BC5E9;
+      }
+    }
   }
 
   &__container {
@@ -69,6 +77,10 @@
       &.show {
         max-height: 200px;
       }
+    }
+
+    &-color {
+      columns: red;
     }
   }
 }
