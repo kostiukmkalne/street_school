@@ -1,58 +1,8 @@
-// .team {
-//   max-width: 100%;
-//   margin: 40px 102px;
-//   padding: 20px;
-
-//   &__titles {
-//     text-align: start;
-//     margin-bottom: 104px;
-//   }
-
-//   &__blog {
-//     display: flex;
-//     align-items: center;
-//     gap: 8px;
-
-//     &-img {
-//       display: block;
-//       width: 16px;
-//       height: 16px;
-//     }
-//   }
-
-//   &__main-title {
-//     display: flex;
-//     flex-direction: row;
-//     justify-content: flex-start;
-//     align-items: center;
-//     margin-top: -10px;
-//   }
-
-//   &__photos {
-//     display: flex;
-//     margin-top: -30px;
-//     gap: 24px;
-
-//     &__fotos__one {
-//       display: flex;
-//       flex-direction: column;
-//       margin-bottom: 24px;
-//     }
-//   }
-
-//   &__photo {
-//     margin-bottom: 24px;
-//   }
-// }
-
 .team {
-  max-width: 100%;
-  margin: 40px 102px;
-  padding: 20px;
+  margin-bottom: 80px;
 
   &__titles {
     text-align: start;
-    margin-top: 8px;
     margin-bottom: 48px;
   }
 
@@ -60,7 +10,6 @@
     display: flex;
     align-items: center;
     gap: 8px;
-    margin-bottom: -40px;
 
     &-img {
       display: block;
@@ -76,7 +25,9 @@
   &__main-block{
     display: flex;
     flex-direction: row;
+    font-weight: bold;
     gap: 10px;
+
 
     &-title {
       display: flex;
@@ -86,25 +37,48 @@
       font-size: 2.5em;
 
       &-color {
+        font-family: Pacifico;
         font-size: 2.5em;
-        color: #9BC5E9;;
+        color: #9BC5E9;
       }
     }
   }
 
   &__photos {
     display: flex;
-    margin-top: -30px;
     gap: 24px;
-
-    &__fotos__one {
-      display: flex;
-      flex-direction: column;
-      margin-bottom: 24px;
-    }
   }
 
   &__photo {
     margin-bottom: 24px;
+
+    &:hover {
+      transform: scale(1.1);
+      transition: transform 0.8s cubic-bezier(0.25, 0.1, 0.25, 1);
+    }
+
+    &-1,
+    &-2,
+    &-3 {
+      width: 368px;
+    }
+
+    &-4 {
+      width: 368px;
+    }
+
+    &-5,
+    &-6 {
+      width: 368px;
+    }
+
+    &-7 {
+      width: 368px;
+
+      &:active {
+      border: 1px solid #D9D9D9 ;
+      border-radius: 9%;
+    }
+    }
   }
 }

@@ -7,7 +7,7 @@ export const dataEn = {
   navigation: {
     nav: [
       { href: "#about-us", label: "About Us" },
-      { href: "#testimonials", label: "Testimonials" },
+      { href: "#feedback", label: "Feedback" },
       { href: "#study-forms", label: "Study Forms" },
       { href: "#q-and-a", label: "Q&A" },
       { href: "#contacts", label: "Contacts" },
@@ -18,11 +18,11 @@ export const dataEn = {
     main_title: "Expand",
     main_title_middle: "your business horizons",
     main_title_end: "with English!",
-    explanation: [
+    explanation_str:
       "English is not only a tool for increasing competitiveness and",
-      "business globalization, but also a means of improving staff interaction, as it fosters",
-      "team bonding and stronger connections.",
-    ],
+    explanation_mid:
+      "business globalization, but also a means of improving staff interaction,",
+    explanation_end: "as it fosters team bonding and stronger connections.",
     button: "Learn more about the courses",
   },
   values: {
@@ -59,10 +59,10 @@ export const dataEn = {
   },
   mission: {
     title: "Our Mission",
-    text: "Learning English should be engaging for the student and inspiring for yourself. Always remember, the most important thing is to help our students achieve their goals and dreams.",
+    text: "Teaching English for the student's enjoyment, for yourself, and remembering that the most important thing is to help realize the goals and dreams of our students",
     vision_title: "Our Vision",
     vision_text:
-      "To teach Ukrainians English at a B2 level and beyond, enabling them to use it as a tool to achieve their goals in business and personal life.",
+      "To teach Ukrainians English at level B2 and above so that they can use it as a tool to achieve their goals in business and personal affairs",
   },
   team: {
     title: "Meet us",
@@ -190,13 +190,14 @@ export const dataEn = {
     },
   },
   phrase: {
-    quote: "The limits of my language are the limits of my world",
+    quote: "«The limits of my language are the limits of my world»",
     author: {
       name: "Ludwig Wittgenstein",
       position: "Philosopher",
     },
     main_title: "Expand the possibilities",
-    main_title_middle: "of your communication expand the possibilities",
+    main_title_str: "of your ",
+    main_title_mid: "communication expand the possibilities",
     main_title_end: "of your world",
   },
   education: {
@@ -217,9 +218,9 @@ export const dataEn = {
         price: {
           base: "410.00₴",
           discounts: {
-            lesson_1: "10 lessons: 410.00₴",
-            lesson_2: "16 lessons: 400.00₴",
-            lesson_3: "32 lessons: 390.00₴",
+            lesson_1: "10 lessons - 410.00₴",
+            lesson_2: "16 lessons - 400.00₴",
+            lesson_3: "32 lessons - 390.00₴",
           },
         },
       },
@@ -236,9 +237,9 @@ export const dataEn = {
         price: {
           base: "315.00₴",
           discounts: {
-            lesson_1: "10 lessons: 315.00₴",
-            lesson_2: "16 lessons: 310.00₴",
-            lesson_3: "32 lessons: 300.00₴",
+            lesson_1: "10 lessons - 315.00₴",
+            lesson_2: "16 lessons - 310.00₴",
+            lesson_3: "32 lessons - 300.00₴",
           },
         },
       },
@@ -255,13 +256,13 @@ export const dataEn = {
         price: {
           base: "260.00₴",
           discounts: {
-            lesson_1: "16 lessons: 260.00₴",
-            lesson_2: "32 lessons: 250.00₴",
+            lesson_1: "16 lessons - 260.00₴",
+            lesson_2: "32 lessons - 250.00₴",
           },
         },
         //--//--//
 
-        title2: "Group Learning (4 People)",
+        title2: "Group Learning 4 People",
         details2: {
           time2: "60 хв",
           person2: "4 people",
@@ -270,8 +271,8 @@ export const dataEn = {
         price2: {
           base2: "215.00₴",
           discounts2: {
-            lesson_12: "16 lessons: 215.00₴",
-            lesson_22: "32 lessons: 210.00₴",
+            lesson_12: "16 lessons - 215.00₴",
+            lesson_22: "32 lessons - 210.00₴",
           },
         },
       },
@@ -288,7 +289,7 @@ export const dataEn = {
         price: {
           base: "230.00₴",
           discounts: {
-            lesson_1: "5 lessons: 230.00₴",
+            lesson_1: "5 lessons - 230.00₴",
           },
         },
       },

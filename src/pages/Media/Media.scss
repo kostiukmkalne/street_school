@@ -1,14 +1,11 @@
 .media {
-  height: 496px;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 20px;
   background-color: #9BC5E30D;
   text-align: center;
-  margin-top: 168px;
-  margin-bottom: 168px;
-  margin: 0 auto;
+  margin-bottom: 182px;
 
   &__header {
     display: flex;
@@ -20,18 +17,16 @@
   &__logo {
     width: 100px;
     height: auto;
-    margin-bottom: 10px;
+    margin-bottom: 60px;
   }
 
   &__info {
     display: flex;
     align-items: center;
-    margin-bottom: -10px;
 
     &-img {
       height: 18px;
       width: 18px;
-      height: auto;
       margin-right: 10px;
     }
 
@@ -44,21 +39,21 @@
     display: flex;
     flex-direction: row;
     gap: 10px;
-    margin-top: -40px;
+    font-weight: bold;
 
     &-title {
+      margin-top: 12px;
       font-size: 2.5rem;
 
       &-color {
+        font-family: Pacifico;
         font-size: 2.5rem;
         color: #9BC5E9;
       }
     }
   }
 
-
-
-  .media__social {
+  &__social {
     display: flex;
     gap: 40px;
     margin-top: 60px;
@@ -68,18 +63,18 @@
       transition: transform 0.3s ease;
     }
 
-    &__icon {
-      width: 32px;
-      height: auto;
+    &-icon {
+      padding: 5px 5px;
+      border-radius: 9%;
       transition: filter 0.3s ease;
 
       &:hover {
-        background-color: #000;
+        background-color: #ebebeb;
       }
 
       &.active {
-        background: #d6d6d6;
-        border: 1px solid #b3b3b3;
+        border: 1px solid #000 ;
+        border-radius: 9%;
       }
     }
   }

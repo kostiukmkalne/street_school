@@ -1,6 +1,5 @@
 .progress {
-  height: 100%;
-  margin: 0 auto;
+  margin-bottom: 80px;
 
   &__titles {
     display: flex;
@@ -28,37 +27,33 @@
   &__main {
     display: flex;
     flex-direction: row;
+    font-weight: bold;
     gap: 10px;
-    margin-top: -50px;
+    margin-bottom: 102px;
 
     &-title {
       font-size: 2.5em;
+      margin-top: 13px;
 
       &-color {
+        font-family: Pacifico;
         color: #9BC5E9;
         font-size: 2.5em;
       }
     }
   }
 
-
-
   &__columns {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 40px;
-
-    margin: 40px 102px;
-    padding: 20px;
-  }
-
-  &__block {
-    margin-top: -20px;
   }
 
   &__content {
     display: flex;
     align-items: center;
+    font-weight: bold;
+    margin-bottom: 15px;
 
     &-img {
       width: 16px;
@@ -68,6 +63,7 @@
   }
 
   &__content-text {
-    margin-top: 0;
+    font-weight: normal;
+    color: #888;
   }
 }

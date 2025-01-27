@@ -1,12 +1,12 @@
 .banner-page {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
   background-image: url('../../assets/bannerBack.svg');
 }
 
 .banner {
   max-width: 100%;
-  margin: 10px 102px;
-  padding: 20px;
   display: flex;
   flex-direction: column;
   background-size: cover;
@@ -15,10 +15,12 @@
   &__titles {
     display: flex;
     flex-direction: column;
+    margin-top: 140px;
   }
 
-  &__block-clients {
+  &__client {
     display: inline-flex;
+     margin-bottom: 10px;
   }
 
   &__stars-img {
@@ -30,73 +32,35 @@
     font-size: 16px;
   }
 
-
-
   &__main-title {
-    margin-top: 0;
     font-size: 2.5em;
-    line-height: 1.2;
     font-weight: bold;
-    font-family: e-Ukraine Head;
-    font-size: 62px;
-    font-weight: 700;
-    line-height: 100%;
-    letter-spacing: -2%;
-    text-align: left;
-    margin-top: -20px;
+    margin-bottom: 12px;
 
     &-color {
+      font-family: Pacifico;
+      font-size: 1.5em;
       color: rgb(155, 197, 233);
     }
   }
 
-  &__highlight {
-    color: #9BC5E9; // Основний синій колір тексту
-    -webkit-text-stroke: 1px #9BC5E9; // Синя обводка тексту
-    font-size: inherit; // Залишаємо розмір тексту таким самим
-    font-style: italic;
-    font-family: "Pacifico";
-    font-size: 90px;
-    font-weight: 400;
-    line-height: 100%;
-    letter-spacing: -2%;
-    text-align: left;
-  }
-
-  &__block-clients {
-    display: inline-flex;
-    margin: 135.5px 462px 0 0;
-    align-items: center;
-    gap: 2.5px;
-
-  }
-
-  &__stars-img {
-    width: 16px;
-    height: 16px;
-  }
-
-  &__text {
-    white-space: nowrap;
-  }
-
   &__explanation {
+    margin-bottom: 48px;
+
     &-text-1 {
-      margin-top: -20px;
-      font-size: 16px;
+      font-size: 14px;
       font-weight: normal;
     }
 
     &-text-2,
     &-text-3 {
-      margin-top: -30px;
       font-weight: normal;
-      font-size: 16px;
+      font-size: 14px;
     }
   }
 
   .button {
-    width: 35%;
+    width: 46%;
     height: 48px;
     display: flex;
     align-items: center;
@@ -105,6 +69,8 @@
     padding: 8px 16px;
     border-radius: 8px;
     cursor: pointer;
+    font-weight: bold;
+    margin-bottom: 170px;
     background: linear-gradient(180deg, #9bc5e9, #e3f2ff 100%); /* Градієнтний фон */
     border: 1px solid #9bc5e9; /* Тонка рамка під градієнт */
     box-shadow: inset 0px -3px 0px #9bc5e9,
@@ -129,27 +95,26 @@
 }
 
 .video {
+
   &__size {
     display: flex;
-    height: 540px;
+    // height: 540px;
     width: 400px;
     border-radius: 12px;
-
-    margin-left: -70px;
   }
 }
 
-@media (max-width: 768px) {
-  .banner {
-    padding: 20px;
+// @media (max-width: 768px) {
+//   .banner {
+//     padding: 20px;
 
-    &__title-main {
-      width: 100%;
-      font-size: 1.5rem;
-    }
+//     &__title-main {
+//       width: 100%;
+//       font-size: 1.5rem;
+//     }
 
-    &__button {
-      width: 100%;
-    }
-  }
-}
+//     &__button {
+//       width: 100%;
+//     }
+//   }
+// }

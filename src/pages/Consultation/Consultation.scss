@@ -3,7 +3,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 20px;
   background-color: #f9f9f9;
   text-align: center;
   background-image: url('../../assets/consultationBack.svg');
@@ -18,7 +17,6 @@
   &__info {
     display: flex;
     align-items: center;
-    margin-bottom: -20px;
 
     &-img {
       height: 18px;
@@ -35,14 +33,15 @@
   &__main {
     display: flex;
     flex-direction: row;
+    font-weight: bold;
     gap: 10px;
-    margin-top: -30px;
 
     &-title {
+      margin-top: 12px;
       font-size: 2.5rem;
-      margin-bottom: 20px;
 
       &-color {
+        font-family: Pacifico;
         font-size: 2.5rem;
         color: #9BC5E9;
       }
@@ -50,7 +49,7 @@
   }
 
   .button {
-    width: 21%;
+    width: 26%;
     height: 48px;
     display: flex;
     align-items: center;
@@ -58,6 +57,7 @@
     gap: 8px;
     padding: 8px 16px;
     border-radius: 8px;
+    font-weight: bold;
     cursor: pointer;
     background: linear-gradient(180deg, #9bc5e9, #e3f2ff 100%); /* Градієнтний фон */
     border: 1px solid #9bc5e9; /* Тонка рамка під градієнт */

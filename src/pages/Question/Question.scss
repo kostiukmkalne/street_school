@@ -1,7 +1,5 @@
 .question {
-  max-width: 100%;
-  margin: 40px 102px;
-  padding: 20px;
+  margin-bottom: 168px;
 
   &__header {
     text-align: start;
@@ -11,7 +9,6 @@
   &__info {
     display: flex;
     align-items: center;
-    margin-bottom: -10px;
 
     &-img {
       width: 18px;
@@ -27,13 +24,15 @@
   &__main {
     display: flex;
     flex-direction: row;
-    gap: 10px;
-    margin-top: -40px;
+    font-weight: bold;
+    gap: 12px;
 
     &-title {
+      margin-top: 13px;
       font-size: 2.5em;
 
       &-color {
+        font-family: Pacifico;
         font-size: 2.5em;
         color: #9BC5E9;
       }
@@ -44,7 +43,6 @@
     display: flex;
     flex-direction: column;
     gap: 10px;
-    margin-top: -40px;
   }
 
   &__item {
@@ -56,31 +54,28 @@
       padding: 8px 0;
 
       &-text {
-        font-size: 18px;
-        font-weight: 500;
+        font-size: 1.2em;
         flex-grow: 1;
       }
 
-      img {
-        margin-left: 8px;
+      &-color {
+        color: #FAFAFA;
       }
     }
 
     &-answer {
-      font-size: 16px;
-      padding-left: 16px;
+      font-size: 0.9em;
+      padding-top: 8px;
       color: #555;
       max-height: 0;
+      opacity: 0;
       overflow: hidden;
-      transition: max-height 0.3s ease-out;
+      transition: max-height 0.5s ease-out, opacity 0.5s ease-out;
 
       &.show {
-        max-height: 200px;
+        max-height: 500px;
+        opacity: 1;
       }
-    }
-
-    &-color {
-      columns: red;
     }
   }
 }

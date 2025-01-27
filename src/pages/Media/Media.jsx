@@ -25,7 +25,7 @@ export const Media = () => {
       <div className="media__social">
         {socialMediaLinks.map(({ href, img, alt }) => (
           <a key={alt} href={href} target="_blank" rel="noopener noreferrer">
-            <img src={img} className="media__icon" alt={alt} />
+            <img src={img} className="media__social-icon" alt={alt} />
           </a>
         ))}
       </div>

@@ -21,17 +21,30 @@ export const Group = () => {
           <h6 className="education__group-subtitle">
             {t("education.formats.group.subtitle")}
           </h6>
+
           <div className="education__group-details">
             <div className="education__group-details-staff">
-              <img src={clock} alt="clock-img" />
+              <img
+                src={clock}
+                alt="clock-img"
+                className="education__group-details-staff-img"
+              />
               <h6>{t("education.formats.group.details.time")}</h6>
             </div>
             <div className="education__group-details-staff">
-              <img src={human} alt="human-img" />
+              <img
+                src={human}
+                alt="human-img"
+                className="education__group-details-staff-img"
+              />
               <h6>{t("education.formats.group.details.person")}</h6>
             </div>
             <div className="education__group-details-staff">
-              <img src={online} alt="online-img" />
+              <img
+                src={online}
+                alt="online-img"
+                className="education__group-details-staff-img"
+              />
               <h6>{t("education.formats.group.details.online")}</h6>
             </div>
           </div>
@@ -87,15 +100,27 @@ export const Group = () => {
           </h6>
           <div className="education__group-details">
             <div className="education__group-details-staff">
-              <img src={clock} alt="clock-img" />
+              <img
+                src={clock}
+                alt="clock-img"
+                className="education__group-details-staff-img"
+              />
               <h6>{t("education.formats.group.details2.time2")}</h6>
             </div>
             <div className="education__group-details-staff">
-              <img src={human} alt="human-img" />
+              <img
+                src={human}
+                alt="human-img"
+                className="education__group-details-staff-img"
+              />
               <h6>{t("education.formats.group.details2.person2")}</h6>
             </div>
             <div className="education__group-details-staff">
-              <img src={online} alt="online-img" />
+              <img
+                src={online}
+                alt="online-img"
+                className="education__group-details-staff-img"
+              />
               <h6>{t("education.formats.group.details2.online2")}</h6>
             </div>
           </div>

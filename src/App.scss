@@ -1,23 +1,64 @@
+/* Bold Variant */
 @font-face {
-  font-family: e-Ukraine Head, Roboto, Arial;
-  src:
-    url("../src/fonts/e-Ukraine/e-Ukraine-Bold.otf") format("opentype") tech(color-COLRv1),
-    url("../src/fonts/e-Ukraine/e-Ukraine-Regular.otf") format("opentype"),
-    url("../src/fonts/e-Ukraine/e-Ukraine-UltraLight.otf") format("woff");
-    // url('../fonts/Roboto-Regular-webfont.woff') format('woff');
+  font-family: 'e-Ukraine Head';
+  src: url('../src/fonts/e-Ukraine/e-Ukraine-Bold.otf') format('opentype'),
+  url('../src/fonts/e-Ukraine/e-Ukraine-Bold.otf') format('woff'); /* Include woff for better support */
+  font-weight: bold;
+  font-style: normal;
+}
+
+/* Regular Variant */
+@font-face {
+  font-family: 'e-Ukraine Head';
+  src: url('../src/fonts/e-Ukraine/e-Ukraine-Regular.otf') format('opentype'),
+  url('../src/fonts/e-Ukraine/e-Ukraine-Regular.otf') format('woff');
   font-weight: normal;
   font-style: normal;
 }
 
-* {
-  width: 1265px;
-  height: 838px;
+/* UltraLight Variant */
+@font-face {
+  font-family: 'e-Ukraine Head';
+  src: url('../src/fonts/e-Ukraine/e-Ukraine-UltraLight.otf') format('opentype'),
+  url('../src/fonts/e-Ukraine/e-Ukraine-UltraLight.otf') format('woff');
+  font-weight: 200; /* Choose an appropriate weight */
+  font-style: normal;
+}
 
+/* Bold Variant */
+// @font-face {
+//   font-family: 'Pacifico';
+//   src: url('../src/fonts/Pacifico/Pacifico-Bold.ttf') format('opentype'),
+//   url('../src/fonts/Pacifico/Pacifico-Bold.ttf') format('woff'); /* Include woff for better support */
+//   font-weight: bold;
+//   font-style: normal;
+// }
+
+/* Regular Variant */
+@font-face {
+  font-family: 'Pacifico';
+  src: url('../src/fonts/Pacifico/Pacifico-Regular.ttf') format('opentype'),
+  url('../src/fonts/Pacifico/Pacifico-Regular.ttf') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* UltraLight Variant */
+// @font-face {
+//   font-family: 'e-Ukraine 2';
+//   src: url('../src/fonts/Pacifico/Pacifico-UltraLight.ttf') format('opentype'),
+//   url('../src/fonts/Pacifico/Pacifico-UltraLight.ttf') format('woff');
+//   font-weight: 200; /* Choose an appropriate weight */
+//   font-style: normal;
+// }
+
+* {
   padding: 0;
+  margin: 0;
   box-sizing: border-box;
   font-weight: inherit;
 }
 
 html {
-  font-family: 'e-Ukraine Head', serif;
+  font-family: 'e-Ukraine Head', Roboto, Arial, serif; /* Added fallback fonts */
 }

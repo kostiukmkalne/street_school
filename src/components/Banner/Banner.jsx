@@ -11,7 +11,7 @@ export const Banner = () => {
     <div className="banner-page">
       <div className="banner">
         <div className="banner__titles">
-          <div className="banner__block-clients">
+          <div className="banner__client">
             <img
               src={imgItems.stars}
               className="banner__stars-img"
@@ -67,25 +67,6 @@ export const Banner = () => {
           />
         )}
       </div>
-
-      {/* <div className="video">
-        {imgItems.video && (
-          <>
-            <img
-              src={imgItems.videoImg}
-              alt="Video preview"
-              className="video__poster"
-            />
-            <video
-              controls
-              className="video__size"
-              src={imgItems.video}
-              onPlay={(e) => e.target.previousSibling.style.display = 'none'}
-              onPause={(e) => e.target.previousSibling.style.display = 'block'}
-            />
-          </>
-        )}
-      </div> */}
     </div>
   );
 };

@@ -1,6 +1,6 @@
 import React from "react";
 import './Mission.scss';
-import arrDown from "../../assets/arrowDown.svg";
+import arrDown from "../../assets/arrBlue.svg";
 
 export const MissionBlock = ({ title, text }) => (
   <div className="mission__block">

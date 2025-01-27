@@ -8,7 +8,7 @@ import { useTranslation } from "react-i18next";
 
 export const Feedback = () => {
   const { t } = useTranslation();
-  const [selectedFeedback, setSelectedFeedback] = useState("client");
+  const [selectedFeedback, setSelectedFeedback] = useState("company");
 
   const handleToggle = (type) => {
     setSelectedFeedback(type);

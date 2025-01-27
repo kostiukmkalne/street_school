@@ -22,9 +22,18 @@ export const Phrase = () => {
       </div>
 
       <div className="phrase__main">
-        <h1 className="phrase__main-title-color">{t("phrase.main_title")}</h1>
-        <h1 className="phrase__main-title">{t("phrase.main_title_middle")}</h1>
-        <h1 className="phrase__main-title-end-color">{t("phrase.main_title_end")}</h1>
+        <div className="phrase__main-modef">
+          <h1 className="phrase__main-modef-title-color">
+            {t("phrase.main_title")}
+          </h1>
+          <h1 className="phrase__main-modef-title">
+            {t("phrase.main_title_str")}
+          </h1>
+        </div>
+        <h1 className="phrase__main-title">{t("phrase.main_title_mid")}</h1>
+        <h1 className="phrase__main-title-end-color">
+          {t("phrase.main_title_end")}
+        </h1>
       </div>
     </div>
   );

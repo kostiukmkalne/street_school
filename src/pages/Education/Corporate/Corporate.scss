@@ -3,29 +3,33 @@
   flex-direction: row;
   justify-content: start;
   gap: 40px;
-  margin-top: 50px;
-  margin-bottom: 80px;
 
   &-format {
-    width: 472px;
-    height: 442px;
     display: flex;
     flex-direction: column;
-    padding: 25px 25px;
+    padding: 40px 40px;
     background-color: #f2f2f2;
     color: #000;
     border-radius: 8px;
   }
 
+  &-title {
+    margin-bottom: 16px;
+    font-weight: bold;
+  }
+
+  &-subtitle {
+    font-size: 0.6em;
+    color: #888;
+    margin-bottom: 16px;
+  }
+
   &-benefits {
-    width: 472px; /* Ширина */
-    height: 432px; /* Висота */
     display: flex;
     flex-direction: column;
-    padding: 40px;
     color: #000;
     border-radius: 8px;
-    justify-content: space-between; /* Розподіл простору між елементами */
+    justify-content: space-between;
 
     hr {
       margin: 10px 0;
@@ -39,96 +43,50 @@
       img {
         width: 16px;
         height: 16px;
-        margin-right: 8px; /* Відступ між іконкою і текстом */
+        margin-right: 8px;
       }
 
       h5 {
-        margin: 0; /* Прибираємо зайві відступи */
+        margin: 0;
       }
     }
   }
 
-  &-subtitle {
-    margin-top: 0;
-    font-weight: normal;
-  }
-
   &-details {
-    margin-top: 16px;
     display: flex;
     justify-content: space-around;
+    margin-bottom: 16px;
 
     &-staff {
       display: flex;
       flex-direction: column;
       align-items: center;
       text-align: center;
+
+      &-img {
+        margin-bottom: 10px;
+      }
     }
   }
 
   &-price {
-    width: 451px; /* Ширина */
-    height: auto; /* Автоматична висота залежно від контенту */
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    padding: 0;
-    margin-top: 20px;
     background-color: #fff;
+    padding: 16px 16px;
     border-radius: 8px;
     margin-bottom: 26px;
 
     &-discounts {
       display: flex;
       flex-direction: column;
+      justify-content: space-between;
       align-items: flex-start;
-      margin: 0;
     }
   }
 
-  &__corporate-text {
-    justify-content: space-around;
-  }
-
-  &__corporate-pre {
-    font-weight: normal;
-    margin-top: -20px;
-  }
-
-  &__corporate-icon {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); // Дві колонки
-    gap: 16px; // Відступ між іконками
-    justify-items: center; // Центрування іконок у колонках
-
-    .education__corporate-link {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      width: 40px;
-      height: 36px;
-      padding: 5px 5px;
-      border: 2px solid transparent;
-      border-radius: 8px;
-      background-color: transparent;
-      transition: background-color 0.3s, border-color 0.3s;
-
-      &:hover {
-        background-color: #f9f9f9;
-      }
-
-      &:active {
-        background-color: #e6e6e6;
-        border-color: #ccc;
-      }
-    }
-  }
-
-  &__container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+  //
 
   .button {
     width: 100%;
@@ -169,11 +127,11 @@
     img {
       width: 16px;
       height: 16px;
-      margin-right: 8px; /* Відступ між іконкою і текстом */
+      margin-right: 8px;
     }
 
     h5 {
-      margin: 0; /* Прибираємо зайві відступи */
+      margin: 0;
     }
   }
 }

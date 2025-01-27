@@ -1,5 +1,5 @@
 import React from "react";
-import "./Individual.scss";
+import "../../Education/United.scss";
 import { Button } from "../../../components/Button/Button.jsx";
 import { useTranslation } from "react-i18next";
 import clock from "../../../assets/education/clock.svg";
@@ -20,17 +20,30 @@ export const Individual = () => {
         <h6 className="education__individual-subtitle">
           {t("education.formats.individual.subtitle")}
         </h6>
+
         <div className="education__individual-details">
           <div className="education__individual-details-staff">
-            <img src={clock} alt="clock-img" />
+            <img
+              src={clock}
+              alt="clock-img"
+              className="education__individual-details-staff-img"
+            />
             <h6>{t("education.formats.individual.details.time")}</h6>
           </div>
           <div className="education__individual-details-staff">
-            <img src={human} alt="human-img" />
+            <img
+              src={human}
+              alt="human-img"
+              className="education__individual-details-staff-img"
+            />
             <h6>{t("education.formats.individual.details.person")}</h6>
           </div>
           <div className="education__individual-details-staff">
-            <img src={online} alt="online-img" />
+            <img
+              src={online}
+              alt="online-img"
+              className="education__individual-details-staff-img"
+            />
             <h6>{t("education.formats.individual.details.online")}</h6>
           </div>
         </div>
