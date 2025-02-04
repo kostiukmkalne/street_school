@@ -7,6 +7,13 @@ import { imgItems } from "./dataImg.js";
 export const Banner = () => {
   const { t } = useTranslation();
 
+  const handleScrollToForm = () => {
+    const targetElement = document.getElementById("study-forms");
+    if (targetElement) {
+      targetElement.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <div className="banner-page">
       <div className="banner">
@@ -45,7 +52,11 @@ export const Banner = () => {
           </div>
         </div>
 
-        <Button className="banner__button" aria-label="banner-button">
+        <Button
+          className="banner__button"
+          aria-label="banner-button"
+          onClick={handleScrollToForm}
+        >
           {t("banner.button")}
           <img
             src={imgItems.arrdown}

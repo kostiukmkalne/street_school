@@ -6,7 +6,6 @@
 }
 
 .banner {
-  max-width: 100%;
   display: flex;
   flex-direction: column;
   background-size: cover;
@@ -98,23 +97,8 @@
 
   &__size {
     display: flex;
-    // height: 540px;
+    height: 540px;
     width: 400px;
     border-radius: 12px;
   }
 }
-
-// @media (max-width: 768px) {
-//   .banner {
-//     padding: 20px;
-
-//     &__title-main {
-//       width: 100%;
-//       font-size: 1.5rem;
-//     }
-
-//     &__button {
-//       width: 100%;
-//     }
-//   }
-// }

@@ -25,15 +25,6 @@
   font-style: normal;
 }
 
-/* Bold Variant */
-// @font-face {
-//   font-family: 'Pacifico';
-//   src: url('../src/fonts/Pacifico/Pacifico-Bold.ttf') format('opentype'),
-//   url('../src/fonts/Pacifico/Pacifico-Bold.ttf') format('woff'); /* Include woff for better support */
-//   font-weight: bold;
-//   font-style: normal;
-// }
-
 /* Regular Variant */
 @font-face {
   font-family: 'Pacifico';
@@ -42,15 +33,6 @@
   font-weight: normal;
   font-style: normal;
 }
-
-/* UltraLight Variant */
-// @font-face {
-//   font-family: 'e-Ukraine 2';
-//   src: url('../src/fonts/Pacifico/Pacifico-UltraLight.ttf') format('opentype'),
-//   url('../src/fonts/Pacifico/Pacifico-UltraLight.ttf') format('woff');
-//   font-weight: 200; /* Choose an appropriate weight */
-//   font-style: normal;
-// }
 
 * {
   padding: 0;
@@ -61,4 +43,5 @@
 
 html {
   font-family: 'e-Ukraine Head', Roboto, Arial, serif; /* Added fallback fonts */
+  scroll-behavior: smooth;
 }

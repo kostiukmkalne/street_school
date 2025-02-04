@@ -35,7 +35,7 @@ export const Education = () => {
   };
 
   return (
-    <div className="education">
+    <div className="education" id="study-forms">
       <div className="education__info">
         <div className="education__blog">
           <img src={form} className="education__blog-img" alt="form-img" />
@@ -43,9 +43,7 @@ export const Education = () => {
         </div>
 
         <div className="education__block">
-          <h1 className="education__block-title">
-            {t("education.subtitle")}
-          </h1>
+          <h1 className="education__block-title">{t("education.subtitle")}</h1>
           <h1 className="education__block-title-color">
             {t("education.subtitle_middle")}
           </h1>

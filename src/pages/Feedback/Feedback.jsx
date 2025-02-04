@@ -15,7 +15,7 @@ export const Feedback = () => {
   };
 
   return (
-    <div className="feedback">
+    <div className="feedback" id="feedback">
       <div className="feedback__header">
         <div className="feedback__cluster">
           <img

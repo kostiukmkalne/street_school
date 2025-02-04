@@ -8,7 +8,7 @@ export const Media = () => {
   const { t } = useTranslation();
 
   return (
-    <div className="media">
+    <div className="media" id="contacts">
       <div className="media__header">
         <img src={logoBlock} className="media__logo" alt="media-logo" />
         <div className="media__info">

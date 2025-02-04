@@ -15,6 +15,7 @@ import { Question } from "./pages/Question/Question";
 import { Media } from "./pages/Media/Media";
 import { Consultation } from "./pages/Consultation/Consultation";
 import { Footer } from "./components/Footer/Footer";
+import { StickyButton } from "./components/StickyButton/StickyButton";
 import "./App.scss";
 
 const App = () => {
@@ -38,6 +39,7 @@ const App = () => {
       <Media />
       <Consultation />
       <Footer />
+      <StickyButton />
     </div>
   );
 };

@@ -6,11 +6,11 @@ import { clientImg } from "../pages/Feedback/clientImg.js";
 export const dataEn = {
   navigation: {
     nav: [
-      { href: "#about-us", label: "About Us" },
-      { href: "#feedback", label: "Feedback" },
-      { href: "#study-forms", label: "Study Forms" },
-      { href: "#q-and-a", label: "Q&A" },
-      { href: "#contacts", label: "Contacts" },
+      { href: "#about-us", label: "About Us", hasArrow: true },
+      { href: "#feedback", label: "Feedback", hasArrow: true },
+      { href: "#study-forms", label: "Study Forms", hasArrow: true },
+      { href: "#qa", label: "Q&A", hasArrow: true },
+      { href: "#contacts", label: "Contacts", hasArrow: true },
     ],
   },
   banner: {
@@ -36,14 +36,14 @@ export const dataEn = {
           "To fully dedicate oneself to the task, to be completely engaged in the lesson, ensuring that it truly feels productive.",
       },
       {
-        title: "Diligence",
-        description:
-          "To be honest with yourself and others, not fearing to openly admit when working with a student is challenging and declining collaboration if necessary.",
-      },
-      {
         title: "Creativity",
         description:
           "To be creative and innovative, not afraid to deviate from the template if it benefits the student.",
+      },
+      {
+        title: "Diligence",
+        description:
+          "To be honest with yourself and others, not fearing to openly admit when working with a student is challenging and declining collaboration if necessary.",
       },
       {
         title: "Order",
@@ -382,55 +382,57 @@ export const dataEn = {
     subtitle_end: "your questions:",
     questions: [
       {
-        question:
-          "How does the learning process work at Street English School?",
-        answer:
-          "The learning process at Street English School begins with determining the level of English proficiency and analyzing the needs of your employees. After that, we develop an individual program that takes into account the specifics of your business and learning goals. Classes can be conducted in a format convenient for you — individually, in groups, or online. Our teachers use modern methodologies and interactive materials to make learning effective and engaging. We regularly measure progress so that you can see real results.",
-      },
-      {
-        question: "What forms of learning do you offer?",
-        answer:
-          "Individual, group, couple, conversation club, corporate training",
-      },
-      {
         question: "Can the training program be adapted to your business?",
         answer:
-          "Of course, we develop a personalized training program based on your request and final goal",
+          "Of course you can, we develop a customized training program specifically for your request and ultimate goal.",
       },
       {
         question:
           "How is the level of English proficiency of employees determined?",
         answer:
-          "After the first lesson, we send a test to determine the level, and the level can also be determined using our chatbot",
+          "We are conducting an introductory test. There are several options for completing it, either through our chatbot or in individual meetings.",
       },
       {
-        question: "Can lessons be conducted online?",
-        answer: "Yes, our school specializes in online learning",
+        question: "How can we assess the progress of our employees?",
+        answer:
+          "We conduct testing and also periodically provide feedback on progress and attendance.",
+      },
+      {
+        question: "Is it possible to conduct classes online?",
+        answer:
+          "Yes, our school specializes in online learning and has been working in this area since 2017.",
       },
       {
         question:
           "What is the duration of the course and the number of lessons?",
         answer:
-          "32 lessons, course duration from 4 to 8 months, depending on how many times a week the student attends",
+          "32 lessons is the total number of lessons in the course. Duration is approximately 4 to 8 months, it all depends on how many times a week the student studies and how productively he learns the material.",
       },
       {
-        question: "Can the schedule be changed if necessary?",
+        question: "Is it possible to change the class schedule if necessary?",
+        answer: "Yes, of course we adapt to our students' schedules.",
+      },
+      {
+        question: "What materials are used during training?",
         answer:
-          "Yes, of course, we adapt to your schedule and are flexible with changes",
-      },
-      {
-        question: "What materials are used during the lessons?",
-        answer: "Padlet or Kalyna, additional sources if necessary",
-      },
-      {
-        question: "How can we measure the progress of our employees?",
-        answer: "I don't know the answer",
+          "We have courses that are developed on 2 platforms: Padlet or Kalyna, on them we can also develop courses for your personal request using additional sources if necessary.",
       },
       {
         question: "Do you provide certificates after completing the course?",
         answer:
-          "Yes, of course, the certificate confirms that you completed the course",
+          "Yes, of course the certificate proves that you have studied at our school.",
       },
+      // {
+      //   question:
+      //     "How does the learning process work at Street English School?",
+      //   answer:
+      //     "The learning process at Street English School begins with determining the level of English proficiency and analyzing the needs of your employees. After that, we develop an individual program that takes into account the specifics of your business and learning goals. Classes can be conducted in a format convenient for you — individually, in groups, or online. Our teachers use modern methodologies and interactive materials to make learning effective and engaging. We regularly measure progress so that you can see real results.",
+      // },
+      // {
+      //   question: "What forms of learning do you offer?",
+      //   answer:
+      //     "Individual, group, couple, conversation club, corporate training",
+      // },
     ],
   },
   media: {

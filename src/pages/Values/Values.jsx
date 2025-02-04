@@ -9,7 +9,7 @@ export const Values = () => {
   const values = t("values.points", { returnObjects: true });
 
   return (
-    <div className="values">
+    <div className="values" id="about-us">
       <div className="values__header">
         <div className="values__info">
           <img src={goals} className="values__info-img" alt="made-goals" />

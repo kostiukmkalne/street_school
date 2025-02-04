@@ -74,7 +74,11 @@ export const Team = () => {
             />
           </div>
           <div className="team__photo">
-            <a href="https://www.instagram.com/street_english_school_online?igsh=MTZqNmhmNmh0MWUxcQ==">
+            <a
+              href="https://www.instagram.com/street_english_school_online?igsh=MTZqNmhmNmh0MWUxcQ=="
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <img
                 src={images.insta.src}
                 alt="instagram-img"

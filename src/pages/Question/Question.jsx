@@ -85,7 +85,7 @@ export const Question = () => {
   const questions = t("question.questions", { returnObjects: true });
 
   return (
-    <div className="question">
+    <div className="question" id="qa">
       <div className="question__header">
         <div className="question__info">
           <img
@@ -107,7 +107,6 @@ export const Question = () => {
       <div className="question__container">
         {questions.map((item, index) => (
           <div className="question__item" key={index}>
-            {/* Умовно показуємо <hr /> для другого і наступних */}
             {index > 0 && <hr className="question__item-color" />}
             <div
               className="question__item-title"
