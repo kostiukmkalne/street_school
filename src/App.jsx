@@ -1,5 +1,4 @@
 import React from "react";
-import { useTranslation } from "react-i18next";
 import { Header } from "./components/Header/Header";
 import { Banner } from "./components/Banner/Banner";
 import { Values } from "./pages/Values/Values";
@@ -19,7 +18,6 @@ import { StickyButton } from "./components/StickyButton/StickyButton";
 import "./App.scss";
 
 const App = () => {
-  const { t } = useTranslation();
 
   return (
     <div style={{ padding: "20px 100px" }}>
