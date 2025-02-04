@@ -71,5 +71,5 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 Deploy and create a Pull Request with a
 
-[DEMO LINK](https://kostiukmkalne.github.io/street_eng_school/)
+[DEMO LINK](https://kostiukmkalne.github.io/street_school/)
 
