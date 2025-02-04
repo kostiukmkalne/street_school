@@ -1,6 +1,6 @@
 import React from "react";
-import "./Speaking.scss";
-import { Button } from "../../../components/Button/Button";
+import "../../Education/United.scss";
+import { Button } from "../../../components/Button/Button.jsx";
 import { useTranslation } from "react-i18next";
 import clock from "../../../assets/education/clock.svg";
 import human from "../../../assets/education/human.svg";
@@ -20,17 +20,30 @@ export const Speaking = () => {
         <h6 className="education__speaking-subtitle">
           {t("education.formats.speaking.subtitle")}
         </h6>
+
         <div className="education__speaking-details">
           <div className="education__speaking-details-staff">
-            <img src={clock} alt="clock-img" />
+            <img
+              src={clock}
+              alt="clock-img"
+              className="education__speaking-details-staff-img"
+            />
             <h6>{t("education.formats.speaking.details.time")}</h6>
           </div>
           <div className="education__speaking-details-staff">
-            <img src={human} alt="human-img" />
+            <img
+              src={human}
+              alt="human-img"
+              className="education__speaking-details-staff-img"
+            />
             <h6>{t("education.formats.speaking.details.person")}</h6>
           </div>
           <div className="education__speaking-details-staff">
-            <img src={online} alt="online-img" />
+            <img
+              src={online}
+              alt="online-img"
+              className="education__speaking-details-staff-img"
+            />
             <h6>{t("education.formats.speaking.details.online")}</h6>
           </div>
         </div>

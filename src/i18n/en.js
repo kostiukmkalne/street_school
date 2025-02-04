@@ -6,11 +6,11 @@ import { clientImg } from "../pages/Feedback/clientImg.js";
 export const dataEn = {
   navigation: {
     nav: [
-      { href: "#about-us", label: "About Us" },
-      { href: "#testimonials", label: "Testimonials" },
-      { href: "#study-forms", label: "Study Forms" },
-      { href: "#q-and-a", label: "Q&A" },
-      { href: "#contacts", label: "Contacts" },
+      { href: "#about-us", label: "About Us", hasArrow: true },
+      { href: "#feedback", label: "Feedback", hasArrow: true },
+      { href: "#study-forms", label: "Study Forms", hasArrow: true },
+      { href: "#qa", label: "Q&A", hasArrow: true },
+      { href: "#contacts", label: "Contacts", hasArrow: true },
     ],
   },
   banner: {
@@ -18,11 +18,11 @@ export const dataEn = {
     main_title: "Expand",
     main_title_middle: "your business horizons",
     main_title_end: "with English!",
-    explanation: [
+    explanation_str:
       "English is not only a tool for increasing competitiveness and",
-      "business globalization, but also a means of improving staff interaction, as it fosters",
-      "team bonding and stronger connections.",
-    ],
+    explanation_mid:
+      "business globalization, but also a means of improving staff interaction,",
+    explanation_end: "as it fosters team bonding and stronger connections.",
     button: "Learn more about the courses",
   },
   values: {
@@ -36,14 +36,14 @@ export const dataEn = {
           "To fully dedicate oneself to the task, to be completely engaged in the lesson, ensuring that it truly feels productive.",
       },
       {
-        title: "Diligence",
-        description:
-          "To be honest with yourself and others, not fearing to openly admit when working with a student is challenging and declining collaboration if necessary.",
-      },
-      {
         title: "Creativity",
         description:
           "To be creative and innovative, not afraid to deviate from the template if it benefits the student.",
+      },
+      {
+        title: "Diligence",
+        description:
+          "To be honest with yourself and others, not fearing to openly admit when working with a student is challenging and declining collaboration if necessary.",
       },
       {
         title: "Order",
@@ -59,10 +59,10 @@ export const dataEn = {
   },
   mission: {
     title: "Our Mission",
-    text: "Learning English should be engaging for the student and inspiring for yourself. Always remember, the most important thing is to help our students achieve their goals and dreams.",
+    text: "Teaching English for the student's enjoyment, for yourself, and remembering that the most important thing is to help realize the goals and dreams of our students",
     vision_title: "Our Vision",
     vision_text:
-      "To teach Ukrainians English at a B2 level and beyond, enabling them to use it as a tool to achieve their goals in business and personal life.",
+      "To teach Ukrainians English at level B2 and above so that they can use it as a tool to achieve their goals in business and personal affairs",
   },
   team: {
     title: "Meet us",
@@ -190,13 +190,14 @@ export const dataEn = {
     },
   },
   phrase: {
-    quote: "The limits of my language are the limits of my world",
+    quote: "«The limits of my language are the limits of my world»",
     author: {
       name: "Ludwig Wittgenstein",
       position: "Philosopher",
     },
     main_title: "Expand the possibilities",
-    main_title_middle: "of your communication expand the possibilities",
+    main_title_str: "of your ",
+    main_title_mid: "communication expand the possibilities",
     main_title_end: "of your world",
   },
   education: {
@@ -217,9 +218,9 @@ export const dataEn = {
         price: {
           base: "410.00₴",
           discounts: {
-            lesson_1: "10 lessons: 410.00₴",
-            lesson_2: "16 lessons: 400.00₴",
-            lesson_3: "32 lessons: 390.00₴",
+            lesson_1: "10 lessons - 410.00₴",
+            lesson_2: "16 lessons - 400.00₴",
+            lesson_3: "32 lessons - 390.00₴",
           },
         },
       },
@@ -236,9 +237,9 @@ export const dataEn = {
         price: {
           base: "315.00₴",
           discounts: {
-            lesson_1: "10 lessons: 315.00₴",
-            lesson_2: "16 lessons: 310.00₴",
-            lesson_3: "32 lessons: 300.00₴",
+            lesson_1: "10 lessons - 315.00₴",
+            lesson_2: "16 lessons - 310.00₴",
+            lesson_3: "32 lessons - 300.00₴",
           },
         },
       },
@@ -255,13 +256,13 @@ export const dataEn = {
         price: {
           base: "260.00₴",
           discounts: {
-            lesson_1: "16 lessons: 260.00₴",
-            lesson_2: "32 lessons: 250.00₴",
+            lesson_1: "16 lessons - 260.00₴",
+            lesson_2: "32 lessons - 250.00₴",
           },
         },
         //--//--//
 
-        title2: "Group Learning (4 People)",
+        title2: "Group Learning 4 People",
         details2: {
           time2: "60 хв",
           person2: "4 people",
@@ -270,8 +271,8 @@ export const dataEn = {
         price2: {
           base2: "215.00₴",
           discounts2: {
-            lesson_12: "16 lessons: 215.00₴",
-            lesson_22: "32 lessons: 210.00₴",
+            lesson_12: "16 lessons - 215.00₴",
+            lesson_22: "32 lessons - 210.00₴",
           },
         },
       },
@@ -288,7 +289,7 @@ export const dataEn = {
         price: {
           base: "230.00₴",
           discounts: {
-            lesson_1: "5 lessons: 230.00₴",
+            lesson_1: "5 lessons - 230.00₴",
           },
         },
       },
@@ -381,55 +382,57 @@ export const dataEn = {
     subtitle_end: "your questions:",
     questions: [
       {
-        question:
-          "How does the learning process work at Street English School?",
-        answer:
-          "The learning process at Street English School begins with determining the level of English proficiency and analyzing the needs of your employees. After that, we develop an individual program that takes into account the specifics of your business and learning goals. Classes can be conducted in a format convenient for you — individually, in groups, or online. Our teachers use modern methodologies and interactive materials to make learning effective and engaging. We regularly measure progress so that you can see real results.",
-      },
-      {
-        question: "What forms of learning do you offer?",
-        answer:
-          "Individual, group, couple, conversation club, corporate training",
-      },
-      {
         question: "Can the training program be adapted to your business?",
         answer:
-          "Of course, we develop a personalized training program based on your request and final goal",
+          "Of course you can, we develop a customized training program specifically for your request and ultimate goal.",
       },
       {
         question:
           "How is the level of English proficiency of employees determined?",
         answer:
-          "After the first lesson, we send a test to determine the level, and the level can also be determined using our chatbot",
+          "We are conducting an introductory test. There are several options for completing it, either through our chatbot or in individual meetings.",
       },
       {
-        question: "Can lessons be conducted online?",
-        answer: "Yes, our school specializes in online learning",
+        question: "How can we assess the progress of our employees?",
+        answer:
+          "We conduct testing and also periodically provide feedback on progress and attendance.",
+      },
+      {
+        question: "Is it possible to conduct classes online?",
+        answer:
+          "Yes, our school specializes in online learning and has been working in this area since 2017.",
       },
       {
         question:
           "What is the duration of the course and the number of lessons?",
         answer:
-          "32 lessons, course duration from 4 to 8 months, depending on how many times a week the student attends",
+          "32 lessons is the total number of lessons in the course. Duration is approximately 4 to 8 months, it all depends on how many times a week the student studies and how productively he learns the material.",
       },
       {
-        question: "Can the schedule be changed if necessary?",
+        question: "Is it possible to change the class schedule if necessary?",
+        answer: "Yes, of course we adapt to our students' schedules.",
+      },
+      {
+        question: "What materials are used during training?",
         answer:
-          "Yes, of course, we adapt to your schedule and are flexible with changes",
-      },
-      {
-        question: "What materials are used during the lessons?",
-        answer: "Padlet or Kalyna, additional sources if necessary",
-      },
-      {
-        question: "How can we measure the progress of our employees?",
-        answer: "I don't know the answer",
+          "We have courses that are developed on 2 platforms: Padlet or Kalyna, on them we can also develop courses for your personal request using additional sources if necessary.",
       },
       {
         question: "Do you provide certificates after completing the course?",
         answer:
-          "Yes, of course, the certificate confirms that you completed the course",
+          "Yes, of course the certificate proves that you have studied at our school.",
       },
+      // {
+      //   question:
+      //     "How does the learning process work at Street English School?",
+      //   answer:
+      //     "The learning process at Street English School begins with determining the level of English proficiency and analyzing the needs of your employees. After that, we develop an individual program that takes into account the specifics of your business and learning goals. Classes can be conducted in a format convenient for you — individually, in groups, or online. Our teachers use modern methodologies and interactive materials to make learning effective and engaging. We regularly measure progress so that you can see real results.",
+      // },
+      // {
+      //   question: "What forms of learning do you offer?",
+      //   answer:
+      //     "Individual, group, couple, conversation club, corporate training",
+      // },
     ],
   },
   media: {

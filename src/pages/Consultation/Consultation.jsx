@@ -33,7 +33,7 @@ export const Consultation = () => {
       <Button
         className="consultation__button"
         onClick={() =>
-          window.open("https://t.me/bot_street_english_school_bot", "_blank")
+          window.open("https://t.me/Lyuda_Nebelska", "_blank")
         }
       >
         {t("telegram.text")}

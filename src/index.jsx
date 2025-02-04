@@ -7,5 +7,5 @@ ReactDOM.render(
   <Suspense fallback={<div>Loading...</div>}>
     <App />
   </Suspense>,
-  document.getElementById("root")
+  document.getElementById("root"),
 );

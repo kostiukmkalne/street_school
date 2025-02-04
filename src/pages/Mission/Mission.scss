@@ -1,13 +1,11 @@
 .mission {
   display: flex;
-  max-width: 100%;
-  margin: 40px 102px;
-  padding: 20px;
   gap: 80px;
 
   &__block {
     flex-direction: row;
     justify-content: space-between;
+    margin-bottom: 232px;
   }
 
   &__title {
@@ -25,7 +23,6 @@
   &__img {
     width: 24px;
     height: 24px;
-    margin-top: 20px;
   }
 
   &__text {

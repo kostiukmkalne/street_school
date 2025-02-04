@@ -1,5 +1,5 @@
 import "./Transition.scss";
-import line from '../../assets/line.svg';
+import line from '../../assets/line.png';
 
 export const Transition = () => (
   <div className="transition">

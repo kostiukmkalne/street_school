@@ -15,12 +15,14 @@ import { Question } from "./pages/Question/Question";
 import { Media } from "./pages/Media/Media";
 import { Consultation } from "./pages/Consultation/Consultation";
 import { Footer } from "./components/Footer/Footer";
+import { StickyButton } from "./components/StickyButton/StickyButton";
+import "./App.scss";
 
 const App = () => {
   const { t } = useTranslation();
 
   return (
-    <div>
+    <div style={{ padding: "20px 100px" }}>
       <Header />
       <Banner />
       <Values />
@@ -37,6 +39,7 @@ const App = () => {
       <Media />
       <Consultation />
       <Footer />
+      <StickyButton />
     </div>
   );
 };

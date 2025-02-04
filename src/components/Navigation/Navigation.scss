@@ -1,10 +1,7 @@
 .nav {
   display: flex;
-  // height: 80px;
-  width: 100vw;
   justify-content: space-between;
   align-items: center;
-  padding: 0 32px;
 
   &__list {
     display: flex;
@@ -15,7 +12,27 @@
     gap: 32px;
   }
 
-  &__link {
+  // &__link {
+  //   display: flex;
+  //   align-items: center;
+  //   height: 60px;
+  //   color: #373737;
+  //   font-size: 14px;
+  //   font-weight: 500;
+  //   line-height: 150%;
+  //   letter-spacing: 0.56px;
+  //   text-transform: uppercase;
+  //   text-decoration: none;
+  //   gap: 7px;
+
+  //   transition: transform 0.8s cubic-bezier(0.25, 0.1, 0.25, 1);
+
+  //   &:hover {
+  //     transform: scale(1.1);
+  //   }
+  // }
+
+  .nav__link {
     display: flex;
     align-items: center;
     height: 60px;
@@ -27,6 +44,16 @@
     text-transform: uppercase;
     text-decoration: none;
     gap: 7px;
+
+    // Нижнє підкреслення
+    &:hover {
+      border-bottom: 1.5px solid #373737;
+    }
+
+    // Стиль підкреслення при активації
+    &:active {
+      border-bottom: 2px solid #383838;
+    }
   }
 
   &__arrDown {

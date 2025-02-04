@@ -17,39 +17,73 @@ export const Team = () => {
 
         <div className="team__main-block">
           <h1 className="team__main-block-title">{t("team.subtitle")}</h1>
-          <h1 className="team__main-block-title-color">{t("team.subtitle_end")}</h1>
+          <h1 className="team__main-block-title-color">
+            {t("team.subtitle_end")}
+          </h1>
         </div>
       </div>
 
       <div className="team__photos">
         <div className="team__column">
           <div className="team__photo">
-            <img src={images.hands.src} alt="hands-img" />
+            <img
+              src={images.hands.src}
+              alt="hands-img"
+              className="team__photo-1"
+            />
           </div>
           <div className="team__photo">
-            <img src={images.group.src} alt="group-img" />
+            <img
+              src={images.group.src}
+              alt="group-img"
+              className="team__photo-2"
+            />
           </div>
         </div>
 
         <div className="team__column">
           <div className="team__photo">
-            <img src={images.person.src} alt="person-img" />
+            <img
+              src={images.person.src}
+              alt="person-img"
+              className="team__photo-3"
+            />
           </div>
           <div className="team__photo">
-            <img src={images.book.src} alt="book-img" />
+            <img
+              src={images.book.src}
+              alt="book-img"
+              className="team__photo-4"
+            />
           </div>
         </div>
 
         <div className="team__column">
           <div className="team__photo">
-            <img src={images.phone.src} alt="phoneimg" />
+            <img
+              src={images.phone.src}
+              alt="phoneimg"
+              className="team__photo-5"
+            />
           </div>
           <div className="team__photo">
-            <img src={images.lucy.src} alt="lucy-img" />
+            <img
+              src={images.lucy.src}
+              alt="lucy-img"
+              className="team__photo-6"
+            />
           </div>
           <div className="team__photo">
-            <a href="https://www.instagram.com/street_english_school_online?igsh=MTZqNmhmNmh0MWUxcQ==">
-              <img src={images.insta.src} alt="instagram-img" />
+            <a
+              href="https://www.instagram.com/street_english_school_online?igsh=MTZqNmhmNmh0MWUxcQ=="
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src={images.insta.src}
+                alt="instagram-img"
+                className="team__photo-7"
+              />
             </a>
           </div>
         </div>

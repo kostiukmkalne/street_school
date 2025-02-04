@@ -8,14 +8,14 @@ import { useTranslation } from "react-i18next";
 
 export const Feedback = () => {
   const { t } = useTranslation();
-  const [selectedFeedback, setSelectedFeedback] = useState("client");
+  const [selectedFeedback, setSelectedFeedback] = useState("company");
 
   const handleToggle = (type) => {
     setSelectedFeedback(type);
   };
 
   return (
-    <div className="feedback">
+    <div className="feedback" id="feedback">
       <div className="feedback__header">
         <div className="feedback__cluster">
           <img

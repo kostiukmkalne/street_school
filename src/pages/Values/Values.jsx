@@ -9,16 +9,18 @@ export const Values = () => {
   const values = t("values.points", { returnObjects: true });
 
   return (
-    <div className="values">
+    <div className="values" id="about-us">
       <div className="values__header">
         <div className="values__info">
           <img src={goals} className="values__info-img" alt="made-goals" />
           <h6 className="values__info-title">{t("values.title")}</h6>
         </div>
 
-        <div className="values__title-block">
-          <h1>{t("values.subtitle")}</h1>
-          <h1 className="values__title-block-color">
+        <div className="values__block">
+          <h1 className="values__block-title">
+            {t("values.subtitle")}
+          </h1>
+          <h1 className="values__block-title-color">
             {t("values.subtitle_end")}
           </h1>
         </div>

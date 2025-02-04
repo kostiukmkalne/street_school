@@ -7,11 +7,18 @@ import { imgItems } from "./dataImg.js";
 export const Banner = () => {
   const { t } = useTranslation();
 
+  const handleScrollToForm = () => {
+    const targetElement = document.getElementById("study-forms");
+    if (targetElement) {
+      targetElement.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <div className="banner-page">
       <div className="banner">
         <div className="banner__titles">
-          <div className="banner__block-clients">
+          <div className="banner__client">
             <img
               src={imgItems.stars}
               className="banner__stars-img"
@@ -45,7 +52,11 @@ export const Banner = () => {
           </div>
         </div>
 
-        <Button className="banner__button" aria-label="banner-button">
+        <Button
+          className="banner__button"
+          aria-label="banner-button"
+          onClick={handleScrollToForm}
+        >
           {t("banner.button")}
           <img
             src={imgItems.arrdown}
@@ -67,25 +78,6 @@ export const Banner = () => {
           />
         )}
       </div>
-
-      {/* <div className="video">
-        {imgItems.video && (
-          <>
-            <img
-              src={imgItems.videoImg}
-              alt="Video preview"
-              className="video__poster"
-            />
-            <video
-              controls
-              className="video__size"
-              src={imgItems.video}
-              onPlay={(e) => e.target.previousSibling.style.display = 'none'}
-              onPause={(e) => e.target.previousSibling.style.display = 'block'}
-            />
-          </>
-        )}
-      </div> */}
     </div>
   );
 };

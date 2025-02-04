@@ -1,5 +1,5 @@
 import React from "react";
-import "./Couple.scss";
+import "../../Education/United.scss";
 import { Button } from "../../../components/Button/Button.jsx";
 import { useTranslation } from "react-i18next";
 import clock from "../../../assets/education/clock.svg";
@@ -20,17 +20,30 @@ export const Couple = () => {
         <h6 className="education__couple-subtitle">
           {t("education.formats.couple.subtitle")}
         </h6>
+
         <div className="education__couple-details">
           <div className="education__couple-details-staff">
-            <img src={clock} alt="clock-img" />
+            <img
+              src={clock}
+              alt="clock-img"
+              className="education__couple-details-staff-img"
+            />
             <h6>{t("education.formats.couple.details.time")}</h6>
           </div>
           <div className="education__couple-details-staff">
-            <img src={human} alt="human-img" />
+            <img
+              src={human}
+              alt="human-img"
+              className="education__couple-details-staff-img"
+            />
             <h6>{t("education.formats.couple.details.person")}</h6>
           </div>
           <div className="education__couple-details-staff">
-            <img src={online} alt="online-img" />
+            <img
+              src={online}
+              alt="online-img"
+              className="education__couple-details-staff-img"
+            />
             <h6>{t("education.formats.couple.details.online")}</h6>
           </div>
         </div>
@@ -63,7 +76,6 @@ export const Couple = () => {
           </Button>
         </div>
       </div>
-
       <div className="education__couple-benefits">
         {t("benefits.text", { returnObjects: true }).map((benefit, idx) => (
           <React.Fragment key={idx}>

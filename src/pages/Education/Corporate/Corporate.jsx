@@ -23,15 +23,27 @@ export const Corporate = () => {
         </h6>
         <div className="education__corporate-details">
           <div className="education__corporate-details-staff">
-            <img src={clock} alt="clock-img" />
+            <img
+              src={clock}
+              alt="clock-img"
+              className="education__corporate-details-staff-img"
+            />
             <h6>{t("education.formats.corporate.details.time")}</h6>{" "}
           </div>
           <div className="education__corporate-details-staff">
-            <img src={human} alt="human-img" />
+            <img
+              src={human}
+              alt="human-img"
+              className="education__corporate-details-staff-img"
+            />
             <h6>{t("education.formats.corporate.details.person")}</h6>{" "}
           </div>
           <div className="education__corporate-details-staff">
-            <img src={online} alt="online-img" />
+            <img
+              src={online}
+              alt="online-img"
+              className="education__corporate-details-staff-img"
+            />
             <h6>{t("education.formats.corporate.details.online")}</h6>{" "}
           </div>
         </div>

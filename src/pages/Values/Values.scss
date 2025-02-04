@@ -1,17 +1,12 @@
 .values {
-  max-width: 100%;
-  margin: 40px 102px;
-  padding: 20px;
-
   &__header {
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 126px;
   }
 
   &__info {
     display: flex;
     align-items: center;
-    margin-bottom: -40px;
 
     &-img {
       width: 18px;
@@ -24,54 +19,27 @@
     }
   }
 
-  &__title-block {
+  &__block {
     display: flex;
     flex-direction: row;
+    font-weight: bold;
     gap: 10px;
 
-    &-color {
-      color: #9BC5E9;
+    &-title {
+      font-size: 2.5em;
+      margin-top: 12px;
+
+      &-color {
+        font-family: Pacifico;
+        font-size: 2.5em;
+        color: #9BC5E9;
+      }
     }
-  }
-
-
-
-  &__main-title {
-    display: flex;
-    align-items: start;
-    // font-size: 24px;
-    font-weight: bold;
-    color: #333;
-    margin-top: -15px;
-    margin-bottom: 80px;
-
-    margin-top: 0;
-    font-size: 2.5em;
-    line-height: 1.2;
-    font-weight: bold;
-    font-family: e-Ukraine Head;
-    font-weight: 700;
-    line-height: 100%;
-    letter-spacing: -2%;
-    text-align: left;
   }
 
   &__flock {
     display: flex;
     flex-direction: row;
-  }
-
-  &__highlight {
-    color: #9BC5E9; // Основний синій колір тексту
-    -webkit-text-stroke: 1px #9BC5E9; // Синя обводка тексту
-    font-size: inherit; // Залишаємо розмір тексту таким самим
-    font-style: italic;
-    font-family: "Pacifico";
-    font-size: 90px;
-    font-weight: 400;
-    line-height: 100%;
-    letter-spacing: -2%;
-    text-align: left;
   }
 
   &__content {
@@ -93,7 +61,6 @@
   }
 
   &__points-title {
-    margin-bottom: 16px;
     color: rgb(55, 55, 55);
     font-size: 20px;
     font-weight: 500;
@@ -103,6 +70,7 @@
   &__title {
     font-size: 20px;
     font-weight: bold;
+    margin-bottom: 16px;
   }
 
   &__text-description {
