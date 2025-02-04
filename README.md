@@ -68,4 +68,3 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 [DEMO LINK](https://github.kostiukmkalne.io/street_school/)
-
